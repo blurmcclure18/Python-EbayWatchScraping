@@ -4,12 +4,12 @@ import os
 import pprint
 from ebaysdk.finding import Connection as finding
 from ebaysdk.exception import ConnectionError
+
 from ebayapi import ebayapi  # My API key
-from ebayapi import ebayapi_sandbox
+from ebayapi import ebayapiSand
 
-API_KEY = ebayapi
-API_KEY_SAND = ebayapi_sandbox
-
+# API_KEY = ebayapi
+API_KEY = ebayapiSand
 keywords = input("Enter Keywords: ")
 
 
@@ -22,14 +22,14 @@ class Ebay_21(object):
             api = finding(
                 appid=self.api_key,
                 config_file=None,
-                domain="api.sandbox.com",
+                domain="api.sandbox.ebay.com",
             )
             response = api.execute("findItemsAdvanced", {"keywords": f"{search}"})
             counter = 1
             newInfo = {}
             for item in response.reply.searchResult.item:
-                # print(f"Condition: {item.condition.conditionDisplayName}")
-                # print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
+                print(f"Condition: {item.condition.conditionDisplayName}")
+                print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
                 if item.listingInfo.buyItNowAvailable == "true":
                     newInfo[counter] = {
                         "itemTitle": {item.title},
@@ -76,14 +76,14 @@ class Ebay_21(object):
 
 if __name__ == "__main__":
     e = Ebay_21(API_KEY)
-    # ebay_Listed = e.fetchListed(keywords)
-    # pprint.pprint(ebay_Listed)
+    ebay_Listed = e.fetchListed(keywords)
+    pprint.pprint(ebay_Listed)
 
-    ebay_Sold = e.fetchSold(keywords)
-    pprint.pprint(ebay_Sold)
+    # ebay_Sold = e.fetchSold(keywords)
+    # pprint.pprint(ebay_Sold)
 
-    # json_Listed = json.dumps(ebay_Listed, indent=4)
+    json_Listed = json.dumps(ebay_Listed, indent=4)
 
-    json_object = json.dumps(ebay_Sold, indent=4)
+    # json_object = json.dumps(ebay_Sold, indent=4)
 
-    e.parse(json_object, "sold.json")
+    e.parse(json_Listed, "sold.json")
