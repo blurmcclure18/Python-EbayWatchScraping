@@ -5,10 +5,8 @@ import pprint
 from ebaysdk.finding import Connection as finding
 from ebaysdk.exception import ConnectionError
 from ebayapi import ebayapi  # My API key
-from ebayapi import ebayapi_sandbox
 
 API_KEY = ebayapi
-API_KEY_SAND = ebayapi_sandbox
 
 keywords = input("Enter Keywords: ")
 
@@ -17,20 +15,26 @@ class Ebay_21(object):
     def __init__(self, API_KEY):
         self.api_key = API_KEY
 
-    def fetchListed(self, search):
+    def fetchListed(self, search, averagePrice):
         try:
             api = finding(
                 appid=self.api_key,
                 config_file=None,
-                domain="api.sandbox.com",
             )
-            response = api.execute("findItemsAdvanced", {"keywords": f"{search}"})
+            response = api.execute(
+                "findItemsAdvanced",
+                {
+                    "keywords": f"{search}",
+                    "itemFilter": {"name": "MaxPrice", "value": f"{averagePrice}"},
+                    "paginationInput": {"entriesPerPage": "10", "pageNumber": "1"},
+                },
+            )
             counter = 1
             newInfo = {}
             for item in response.reply.searchResult.item:
                 # print(f"Condition: {item.condition.conditionDisplayName}")
                 # print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
-                if item.listingInfo.buyItNowAvailable == "true":
+                if item.sellingStatus.currentPrice.value < averagePrice:
                     newInfo[counter] = {
                         "itemTitle": {item.title},
                         "itemPrice": {item.sellingStatus.currentPrice.value},
@@ -46,21 +50,33 @@ class Ebay_21(object):
     def fetchSold(self, search):
         try:
             api = finding(appid=self.api_key, config_file=None)
-            response = api.execute("findCompletedItems", {"keywords": f"{search}"})
+            response = api.execute(
+                "findCompletedItems",
+                {
+                    "keywords": f"{search}",
+                    "paginationInput": {"entriesPerPage": "10", "pageNumber": "1"},
+                },
+            )
             counter = 1
-            newInfo = {}
-            # for item in response.reply.searchResult.item:
-            # print(f"Condition: {item.condition.conditionDisplayName}")
-            # print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
-            # if item.listingInfo.buyItNowAvailable == "true":
-            # newInfo[counter] = {
-            #    "itemTitle": {item.title},
-            #    "itemPrice": {item.sellingStatus.currentPrice.value},
-            #    "itemLink": {item.viewItemURL},
-            #    "buyItNowAvailable": {item.listingInfo.buyItNowAvailable},
-            # }
-            # counter += 1
-            return response.dict()
+            soldInfo = {}
+            for item in response.reply.searchResult.item:
+                soldInfo[counter] = {
+                    "itemTitle": {item.title},
+                    "itemPrice": {item.sellingStatus.currentPrice.value},
+                    "itemLink": {item.viewItemURL},
+                    "buyItNowAvailable": {item.listingInfo.buyItNowAvailable},
+                }
+                counter += 1
+
+            priceList = []
+
+            for n in soldInfo:
+                priceList.append(float(soldInfo[n]["itemPrice"]))
+
+            average = sum(priceList) / len(priceList)
+
+            return average
+
         except ConnectionError as e:
             print(e)
             print(e.response.dict())
@@ -76,14 +92,7 @@ class Ebay_21(object):
 
 if __name__ == "__main__":
     e = Ebay_21(API_KEY)
-    # ebay_Listed = e.fetchListed(keywords)
-    # pprint.pprint(ebay_Listed)
 
-    ebay_Sold = e.fetchSold(keywords)
-    pprint.pprint(ebay_Sold)
+    deals = e.fetchListed(keywords, e.fetchSold(keywords))
 
-    # json_Listed = json.dumps(ebay_Listed, indent=4)
-
-    json_object = json.dumps(ebay_Sold, indent=4)
-
-    e.parse(json_object, "sold.json")
+    pprint.pprint(deals)
