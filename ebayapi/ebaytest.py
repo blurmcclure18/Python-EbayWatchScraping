@@ -1,7 +1,10 @@
 # Author Alec McClure
+
 import json
 import os
 import pprint
+import smtplib
+from sendDeals import sendEmail
 from ebaysdk.finding import Connection as finding
 from ebaysdk.exception import ConnectionError
 from ebayapi import ebayapi  # My API key
@@ -25,6 +28,7 @@ class Ebay_21(object):
                 "findItemsAdvanced",
                 {
                     "keywords": f"{search}",
+                    "categoryId": "3937",
                     "itemFilter": {"name": "MaxPrice", "value": f"{averagePrice}"},
                     "paginationInput": {"entriesPerPage": "10", "pageNumber": "1"},
                 },
@@ -32,8 +36,6 @@ class Ebay_21(object):
             counter = 1
             newInfo = {}
             for item in response.reply.searchResult.item:
-                # print(f"Condition: {item.condition.conditionDisplayName}")
-                # print(f"Buy it now available: {item.listingInfo.buyItNowAvailable}")
                 if item.sellingStatus.currentPrice.value < averagePrice:
                     newInfo[counter] = {
                         "itemTitle": {item.title},
@@ -54,6 +56,7 @@ class Ebay_21(object):
                 "findCompletedItems",
                 {
                     "keywords": f"{search}",
+                    "categoryId": "3937",
                     "paginationInput": {"entriesPerPage": "10", "pageNumber": "1"},
                 },
             )
@@ -96,3 +99,5 @@ if __name__ == "__main__":
     deals = e.fetchListed(keywords, e.fetchSold(keywords))
 
     pprint.pprint(deals)
+
+    # sendEmail()
