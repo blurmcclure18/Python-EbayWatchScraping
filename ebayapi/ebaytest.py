@@ -96,8 +96,10 @@ class Ebay_21(object):
 if __name__ == "__main__":
     e = Ebay_21(API_KEY)
 
+    deals_average = e.fetchSold(keywords)
     deals = e.fetchListed(keywords, e.fetchSold(keywords))
 
+    print(deals_average)
     pprint.pprint(deals)
 
     # sendEmail()
