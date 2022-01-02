@@ -97,7 +97,7 @@ if __name__ == "__main__":
     e = Ebay_21(API_KEY)
 
     deals_average = e.fetchSold(keywords)
-    deals = e.fetchListed(keywords, e.fetchSold(keywords))
+    deals = e.fetchListed(keywords, deals_average)
 
     print(deals_average)
     pprint.pprint(deals)
