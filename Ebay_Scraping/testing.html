@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta content="IE=Edge" http-equiv="X-UA-Compatible"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://pages.ebay.com/favicon.ico" rel="icon"/><link href="//ir.ebaystatic.com" rel="dns-prefetch"/><link href="//secureir.ebaystatic.com" rel="dns-prefetch"/><link href="//i.ebayimg.com" rel="dns-prefetch"/><link href="//rover.ebay.com" rel="dns-prefetch"/><script>$ssgST=new Date().getTime();</script><meta charset="utf-8"/><title>Security Measure</title><style>
+			#dCF_captcha_text {
+				display: none !important;
+			}
+			.pgHeading {				
+				margin: 10px 0px 20px 10px;
+				padding: 10px 0px 0px 0px;				
+			}			
+			.pgHeading > h1 {
+				line-height: 27px;
+				text-align: left;
+				margin: 0px 10px 20px 0px;
+				font-size: 1.2em;				
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: normal;
+				color: #5d5d5d;
+			}
+			.pgCenter {				
+				margin: 10px 10px 10px 10px;
+				text-align: justify;
+				font-size: 1.1em;
+			}
+            .captcha-not-rendered-msg-div a:link {
+                text-decoration: underline;
+            }
+		</style><script>
+            window.onload = function() {
+                adjustH1size();
+            }
+
+			function adjustH1size() {
+				var heading = document.querySelector('.pgHeading > h1');
+				var ratio = (heading.offsetWidth / heading.textContent.length + 1 * 0.45) / 10;
+				if (ratio < 1.2) { ratio = 1.2;}
+				if (ratio > 1.5) { ratio = 1.5;}
+				heading.style.fontSize = ratio + 'em';
+			}
+
+			window.onresize = adjustH1size;
+			window.onorientationchange = adjustH1size;
+		</script><link href="https://ir.ebaystatic.com/rs/c/captcha-CpAsu5pR.css" rel="stylesheet"/></head><body class="no-touch"><div id="gh-gb" tabindex="-1"></div><div class="global-header"> <style>body{font-family:Helvetica
+Neue,Helvetica,Arial;margin:0;font-size:16px}html{-webkit-text-size-adjust:none}#mw-hdr{padding:0
+10px 0 9px;border-bottom:1px solid
+#DDD;background-color:#fff}#tbdHdr{width:100%;position:relative}.cl.lgoCl{height:26px;width:65px;padding:8px
+0
+9px;display:inline-block;vertical-align:middle;box-sizing:content-box}#gh-mlogo{background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTM0IiBoZWlnaHQ9IjU0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KIDxnPg0KICAgPHBhdGggZD0ibTI2LjkxLDI1LjE1Yy0wLjI2LC02IC01LC04LjYgLTkuNiwtOC42Yy01LDAgLTkuMywyLjYgLTEwLDguNmwyMCwwbDAsMGwwLDBsLTAuNCwwem0tMjAsNC40YzAuNCw2IDQuNSwxMCAxMC40LDkuN2M0LDAgNy41LC0xLjYgOC43LC01LjJsNywwYy0xLjMsNy4yIC04LjksOS42IC0xNS41LDkuNmMtMTIsMCAtMTcuMiwtNi42IC0xNy4yLC0xNS40YzAsLTkuNyA1LjUsLTE2IDE3LjMsLTE2YzkuNCwwIDE2LjMsNSAxNi4zLDE1LjdsMCwxLjhsLTI3LDBsMCwwIiBmaWxsPSIjRTQzMTM3IiAvPg0KICAgPHBhdGggZD0ibTUxLDM5LjA1YzYsMCAxMC40LC00LjUgMTAuNCwtMTEuMmMwLC02LjcgLTQuMiwtMTEgLTEwLjQsLTExLjJjLTYsMCAtMTEsNC41IC0xMC41LDExLjJjMCw3IDQsMTEgMTEsMTEuMmwtMC41LDB6bS0xNywtMzguN2w2LjcsMGwwLDE2LjhjMywtNCA4LC01IDEyLjIsLTVjNywwIDE2LDUgMTUuNywxNS45YzAsOSAtNi42LDE1LjcgLTE1LjgsMTUuN2MtNSwwIC05LC0yIC0xMi4yLC01LjJjMCwxLjQgLTAuMSwyLjggLTAuMiw0bC02LjYsMCIgZmlsbD0iIzAwNjNEMSIgLz4NCiAgIDxwYXRoIGQ9Im04NC41LDI4Ljc1Yy02LDAgLTEwLDEgLTkuOCw1LjNjMCwzIDIsNSA3LjMsNS40YzcsMCAxMSwtNCAxMSwtMTBsMCwtMC43Yy0yLDAgMCwwIC04LDBsLTAuNSwwem0xNSw4LjNjMCwwIDAsNCAwLjIsNS42bC02LjIsMGMwLDAgMCwwIC0wLjIsLTQuMmMtMyw0IC03LDUgLTEzLDUuM2MtOCwwIC0xMywtNCAtMTIuNiwtOS40YzAsLTcgNiwtMTAgMTYuNCwtMTBjMywwIDAsMCA4LjcsMGwwLC0xYzAsLTUgLTMsLTcgLTguNSwtNi44Yy00LDAgLTcsMiAtNy4zLDQuNWwtNywwYzEsLTcgOCwtOSAxNSwtOWM4LDAgMTUsMyAxNC42LDExIiBmaWxsPSIjRjRBRTAxIiAvPg0KICAgPHBhdGggZD0ibTEzMy41LDEzLjI1bC0yMC42LDQwLjVsLTcuNSwwbDYsLTExLjNsLTE1LjUsLTI5LjNsNy44LDBsMTEuNCwyM2wxMS40LC0yMyIgZmlsbD0iIzg1QjcxNiIgLz4NCiA8L2c+DQo8L3N2Zz4=)
+no-repeat;background-size:65px
+26px;height:26px;width:65px;display:inline-block;white-space:nowrap;text-indent:-9999px;overflow:hidden;position:relative;left:0;top:1px}#mw-hdr.gh-nosvg
+#gh-mlogo{background-image:url(https://ir.ebaystatic.com/rs/v/p4tndzwl5qzltexis0ogajl5cyw.png?e);background-size:69px
+145px;background-position:-1.5px
+-1.5px}#gf-mweb{font-size:16px!important}.fsec{background:#E5E5E5;border-radius:4px;-webkit-border-radius:4px}#f3sec{text-align:center;padding:10px;font-size:.81em;-webkit-text-size-adjust:none}#f3sec
+a{color:#555;display:inline-block;text-decoration:none;line-height:2em;padding:0px
+5px}.fcopy{color:#aaa;margin:0;padding:3px 0
+10px;line-height:1.5em;text-align:center;font-size:.68em;-webkit-text-size-adjust:none}</style><div class="" id="mw-hdr"><div id="tbdHdr"><div class="cl lgoCl"><a _sp="m2428.l4282" class="ghspr" href="http://m.ebay.com" id="gh-mlogo">eBay Home</a></div></div></div><script>!function(){var t=function(){try{document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure","1.1")||(document.getElementById("mw-hdr").className="gh-nosvg")}catch(t){}};"loading"!=document.readyState?t():document.addEventListener("DOMContentLoaded",t)}(),GH={},GH.init=function(){};</script> <div class="widgets-placeholder" id="widgets-placeholder"></div><link href="https://www.ebay.com/manifest.json" rel="manifest"/> </div><div class="grid-cntr" id="wrapper"><form action="captcha_submit" id="captcha_form" method="post"><input name="srt" type="hidden" value="01000600000050af8f4706da4f6b92b4fe6e2e93db8fe378a4ebb124a23e265fc27b9361355d854aed892eb084f1d872ec3018523dc25037c00bd6811a8e0b1711f3c6d665930051c09945a6b94e7615139846278a89c6"/><input name="ru" type="hidden" value="https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2380057.m570.l1312.R1.TR11.TRC2.A0.H0.XIp.TRS1%26_nkw%3D(291)%2Belgin%26LH_Complete%3D1%26LH_Sold%3D1%26_oac%3D1"/><input name="cptap" type="hidden" value="1"/><input name="appName" type="hidden" value="orch"/><input name="cptrdbpid" type="hidden" value="65097cad-e1b7-46fc-ab79-4c92f5253440"/><input name="iia" type="hidden" value="koDEuMTKz"/><input name="iiz" type="hidden" value="AVPIuMjIzNwT"/><input name="iim" type="hidden" value="RNTAuOI"/><div class="pgHeading" id="areaTitle"><h1>Please verify yourself to continue</h1></div><div id="statusError" style="display: none"><div class="stsMsg"><div class="stsMsg-errCtr"><div><div class="r3 c rd-br"><div class=""><div class="r3_t"><b><i></i></b></div></div><div class="r3_c"><div class="r3_cm po"><div><div class="stsMsg-errBgr stsMsg-msgInfo"><b class="b"><p class="g-hdn" id="" tabindex="0">error</p></b><div class="stsMsg-txt"><div class="stsMsg-errTxtStyle stsMsg-boldfont stsMsg-npd"><div><b id="errorBoldContent"></b></div></div></div></div></div></div></div><div><div class="r3_bl"><b><i></i></b></div></div></div></div></div></div></div><div class="pgCenter" id="CentralArea"> <div style="padding: 10px; color: #333">To keep eBay a safe place to buy and sell, we will occasionally ask you to verify yourself. This helps us to block unauthorized users from entering our site.</div><div style="padding: 10px; color: #333; font-weight: bold; float: left;">Please verify yourself</div><div id="captcha_loading" style="float: left; height: 30px; margin-top: -6px;"><div class="lds-css ng-scope"><div class="lds-ellipsis" style="width:100%;height:100%"><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div><div><div></div></div></div></div></div><!--M#s0-69--><div class="target-icaptcha-slot" id="s0-69-captcha-ui"></div><input id="s0-69-captcha-data" type="hidden"/><!--M/--><br/><div style="clear: both"></div><div class="captcha-not-rendered-msg-div" style="padding: 10px; color: #EE001C">If you are having difficulties with rendering of images on the above verification page, eBay suggests using the latest version of your browser, or an alternate browser listed on the <a href="https://www.ebay.com/help/policies/technical-issues/technical-issues?id=4220&amp;st=3&amp;pos=1&amp;query=Technical%20issues&amp;intent=supported%20browsers&amp;lucenceai=lucenceai" l-alt="customer service page - opens in new window or tab" target="_blank">customer service page</a>.</div> </div></form> <script type="text/javascript">
+
+                function checkCaptchaRendered(rendered) {
+                    if (!rendered) {
+                        console.log("ERROR: Captcha has not been rendered");
+                        document.getElementById('statusError').style.display = 'block';
+                        document.getElementById('errorBoldContent').innerHTML = "We are experiencing technical problems while processing the verification challenge. Please try to reload the page, or contact us for technical issues on the links below.";
+                    }
+                }
+
+                function captchaCallback(verified) {
+                    if (verified) {
+                        document.getElementById('captcha_form').submit();
+                    }
+                }
+                
+                function checkCaptcha() {
+                    setTimeout(function() {
+                        var captchaUi = document.getElementsByClassName('target-icaptcha-slot')[0];
+                        if(!captchaUi) {
+                            location.reload();
+                            return;
+                        }
+                        if(!window.captchaLoaded || !window.captchaLoaded['captcha_form']) {
+                            checkCaptcha();
+                        } else {
+                            fadeOutEffect('captcha_loading');
+                        }
+                    }, 800);
+                }
+
+                function fadeOutEffect(dom) {
+                    var fadeTarget = document.getElementById(dom);
+                    var fadeEffect = setInterval(function () {
+                        if (!fadeTarget.style.opacity) {
+                            fadeTarget.style.opacity = 1;
+                        }
+                        if (fadeTarget.style.opacity > 0) {
+                            fadeTarget.style.opacity -= 0.2;
+                        } else {
+                            clearInterval(fadeEffect);
+                            fadeTarget.innerHTML = '';
+                        }
+                    }, 100);
+                }
+
+                checkCaptcha();
+            </script></div> <br/><div class="global-footer"><div class="wrap"><footer class="fsec" id="gf-mweb"><section id="f3sec"><a _sp="m2429.l6836" href="https://pages.ebay.com/help/policies/user-agreement.html">User Agreement</a><a _sp="m2429.l4296" href="https://pages.ebay.com/help/policies/privacy-policy.html">Privacy</a><a href="https://pages.ebay.com/help/account/cookies-web-beacons.html">Cookies</a></section><div class="fcopy">© 1995 - 2021 eBay Inc.</div></footer>
+<div id="widget-platform">
+<script type="application/javascript">window.widget_platform = {"renderType":1,"renderDelay":500,"triggerFallBack":true,"status":4,"queryParam":null,"widgets":[{"html":"","css":null,"js":null,"jsInline":null,"init":""}],"showdiag":[]};</script>
+<div id="gh_user" style="display:none;"></div>
+</div>
+</div></div><script src="https://ir.ebaystatic.com/rs/c/captcha-jrT7ZuFI.js"></script>
+<script>$_mod.ready();</script><script src="https://ir.ebaystatic.com/rs/v/bz4hamy44y0srbkibwpj2azshm1.js" type="text/javascript"></script><script src="https://ir.ebaystatic.com/rs/c/makeebayfasterscript-src-scripts-body-78a2168a.js" type="text/javascript"></script><script type="text/javascript"> if(typeof GH!="undefined"&&GH){GH.urls={ widget_delivery_platform:"https://ir.ebaystatic.com/cr/v/c1/globalheader_widget_platform__v2-b70676194b.js",auto_tracking_widget:"https://ir.ebaystatic.com/rs/v/fu3xj0y0222sdns2ocqkl0t4dak.js",web_resource_tracker:"https://ir.ebaystatic.com/rs/v/mjgerh5fmy51nnbwjoml1g1juqs.js",behavior_js_collection:"https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTYzOTM5MTM2NTI4Ng==-1.0.0.min.js" }; } if(typeof GH!="undefined" && GH){GH_config={"lng":"en-US","geoLang":"[]","suppressGeoUserUpdateInfo":"false","siteId":"0","xhrBaseUrl":"https://www.ebay.com","env":"production",sin:0,pageId:2551517,fn:"",id:""};GH.init();}</script><script>/* ssgST: excluded from sampling */</script><img alt="" border="0" height="0" id="taasroversync" src="https://rover.ebay.com/roversync/?site=0&amp;stg=1&amp;mpt=1641086556914" style="display:none" width="0"/><script type="text/javascript">(function(scope) {var trackingInfo = {"X_EBAY_C_CORRELATION_SESSION":"si=18619ae417e0ad98c5f36681ff6a82fd,c=1,operationId=2551517,trk-gflgs=QA**"};scope.trkCorrelationSessionInfo={};scope.trkCorrelationSessionInfo.getTrackingInfo=function(){return trackingInfo;};scope.trkCorrelationSessionInfo.getTrackingCorrelationSessionInfo=function(){return trackingInfo.X_EBAY_C_CORRELATION_SESSION};})(window)</script><script type="text/javascript">if(typeof raptor !== "undefined" && raptor.require){var Uri=raptor.require("ebay/legacy/utils/Uri");$uri=function(href){return new Uri(href);};window.raptor.extend(window.raptor, require("ebay/legacy/adaptor-utils"));}</script><script id="taasHeaderRes" src="https://ir.ebaystatic.com/rs/v/10341xh50yz21mhhydueu4m5wad.js" type="text/javascript"></script><script id="taasContent" type="text/javascript">try {new window.TaaSTrackingCore({"psi":"AYZrysIA*","rover":{"imp":"/roverimp/0/0/9","clk":"/roverclk/0/0/9","uri":"https://rover.ebay.com"},"pid":"p2551517"});
+var RoverSyncDropped = true;
+var _plsubtInp={"eventFamily":"DFLT","samplingRate":100, "pageLoadTime": new Date().getTime(), "pageId":2551517, "app":"Testapp", "disableImp":true};var _plsUBTTQ=[];var TaaSIdMapTrackerObj = new TaaSIdMapTracker();TaaSIdMapTrackerObj.roverService("https://rover.ebay.com/idmap/0?footer");} catch (err) { console && console.log && console.log(err); }</script><script id="taasFooterRes" src="https://ir.ebaystatic.com/rs/v/s0hteylevy4bpkd12dvkd4yi5ms.js" type="text/javascript"></script><script>$MC=(window.$MC||[]).concat({"l":1,"w":[["s0-69",0,{"captchaForm":"captcha_form","captchaCbFn":"captchaCallback","captchaOnRenderedCbFn":"checkCaptchaRendered","style":"max-width: 300px; clear: left;","appName":"orch","captchasvc":"www.ebay.com"},{"f":1}]],"t":["/icaptcha-ebay$0.0.51/src/index.marko"]})</script></body></html><!-- RcmdId Captcha,RlogId t6pujfpmsn5%3F%3Ckuvuwoduovl0*7qmdg(rbpv674%3C-17e18619acc-0x2603 --><!-- SiteId: 0, Environment: production, AppName: splashui, PageId: 2551517 -->
