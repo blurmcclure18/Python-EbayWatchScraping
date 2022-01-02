@@ -1,0 +1,85 @@
+1641085385641	geckodriver	INFO	Listening on 127.0.0.1:59113
+1641085385644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59747" "-no-remote" "-profile" "/tmp/rust_mozprofileDYSrJ3"
+1641085386359	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDYSrJ3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59747/devtools/browser/913f91ed-2c75-45c3-bd76-686191fd3e2f
+1641085387194	Marionette	INFO	Listening on port 33403
+1641085387831	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641085401320	Marionette	INFO	Stopped listening on port 33403
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641085614828	geckodriver	INFO	Listening on 127.0.0.1:35759
+1641085614830	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53747" "-no-remote" "-profile" "/tmp/rust_mozprofileNPpfTE"
+1641085615523	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNPpfTE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53747/devtools/browser/d7fc3946-7cc1-41b8-9012-20670b7d4fe6
+1641085616427	Marionette	INFO	Listening on port 41587
+1641085616990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&_sacat=0&LH_TitleDesc=0&rt=nc&_odkw=%%28303%%29+elgin&_osacat=0&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6325 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641085623946	Marionette	INFO	Stopped listening on port 41587
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641085641592	geckodriver	INFO	Listening on 127.0.0.1:33619
+1641085641595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48315" "-no-remote" "-profile" "/tmp/rust_mozprofilePFWcPZ"
+1641085642314	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePFWcPZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48315/devtools/browser/15b09b7a-5ad7-4809-8df8-d0615f90983b
+1641085643291	Marionette	INFO	Listening on port 42853
+1641085643307	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://ir.ebaystatic.com/rs/c/inception-LgLVewyK.js, line 6: NetworkError: A network error occurred.
+JavaScript error: https://ir.ebaystatic.com/rs/c/inception-LgLVewyK.js, line 6: NetworkError: A network error occurred.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5178 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://src.ebay-us.com/qmRETG40QnN6nSvB?b1319337e091b1d4=MU_LoYvlaKkUPtIzsFVwrcVavVT5XOZhBeCUDelcJbbi2iVg-zxxPFcof62yUT6WjXuML3mrASV-cJbwCkkhdVN_wkyNPF-IE8JctQtVrFhCxdqlRIvNImaPxX5BYuUo9oWiZHtO_rPGV35037HVlUwzl-0rDXU1r2vXdezdYafSFPS5d8pjSiHm9gsD_o62r-LMhLdyrHg&jb=3539262468736f773d4e696e75782668736d3d4e696c77782468716a7d3f4e6b726d666d7a266a71623f46697265666d782732323937, line 243: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3890 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641085669006	Marionette	INFO	Stopped listening on port 42853
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641085671322	geckodriver	INFO	Listening on 127.0.0.1:34765
+1641085671325	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49395" "-no-remote" "-profile" "/tmp/rust_mozprofile0kRmEi"
+1641085672011	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0kRmEi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49395/devtools/browser/08025def-8bbd-432a-a8cc-8cf9a2070695
+1641085673036	Marionette	INFO	Listening on port 43901
+1641085673139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7656 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641085686718	Marionette	INFO	Stopped listening on port 43901
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641086469933	geckodriver	INFO	Listening on 127.0.0.1:53825
+1641086469936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39945" "-no-remote" "-profile" "/tmp/rust_mozprofileaKKpw4"
+1641086470651	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaKKpw4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39945/devtools/browser/814357eb-7193-463b-bff3-4f64d78400da
+1641086471689	Marionette	INFO	Listening on port 42829
+1641086471748	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4338 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641086518930	Marionette	INFO	Stopped listening on port 42829
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

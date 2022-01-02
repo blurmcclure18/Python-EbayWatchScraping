@@ -25,7 +25,6 @@ average = sum(listNums) / len(listNums)
 print(f"The average price is : {average}")
 
 deals = {}
-
 deals_counter = 0
 for n in testDict:
     if testDict[n]["price"] < average:
