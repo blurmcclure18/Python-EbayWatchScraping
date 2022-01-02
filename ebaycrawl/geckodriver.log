@@ -1,85 +1,134 @@
-1641085385641	geckodriver	INFO	Listening on 127.0.0.1:59113
-1641085385644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59747" "-no-remote" "-profile" "/tmp/rust_mozprofileDYSrJ3"
-1641085386359	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDYSrJ3/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:59747/devtools/browser/913f91ed-2c75-45c3-bd76-686191fd3e2f
-1641085387194	Marionette	INFO	Listening on port 33403
-1641085387831	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1641085401320	Marionette	INFO	Stopped listening on port 33403
+1641091739612	geckodriver	INFO	Listening on 127.0.0.1:60529
+1641091739617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49885" "-no-remote" "-profile" "/tmp/rust_mozprofileEPxE85"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641091740278	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEPxE85/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49885/devtools/browser/e959f2d6-8648-40db-951f-b68e813ae040
+1641091741583	Marionette	INFO	Listening on port 43081
+1641091741649	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641091753471	Marionette	INFO	Stopped listening on port 43081
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1641085614828	geckodriver	INFO	Listening on 127.0.0.1:35759
-1641085614830	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53747" "-no-remote" "-profile" "/tmp/rust_mozprofileNPpfTE"
-1641085615523	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNPpfTE/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:53747/devtools/browser/d7fc3946-7cc1-41b8-9012-20670b7d4fe6
-1641085616427	Marionette	INFO	Listening on port 41587
-1641085616990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&_sacat=0&LH_TitleDesc=0&rt=nc&_odkw=%%28303%%29+elgin&_osacat=0&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
-JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6325 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641092788886	geckodriver	INFO	Listening on 127.0.0.1:55165
+1641092791151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41343" "-no-remote" "-profile" "/tmp/rust_mozprofile5d78TA"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641092791718	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:41343/devtools/browser/49b2e68e-8cd2-491b-bb7e-708cf0f3e522
+1641092793153	Marionette	INFO	Listening on port 46821
+1641092793175	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 479: TypeError: this.cloneScope is null
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: moz-extension://a89207d4-3afc-4dab-874b-c81124a022ee/inject/fallback.js, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1045 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1947 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-1641085623946	Marionette	INFO	Stopped listening on port 41587
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1641092812535	Marionette	INFO	Stopped listening on port 46821
+[Parent 13796, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1641085641592	geckodriver	INFO	Listening on 127.0.0.1:33619
-1641085641595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48315" "-no-remote" "-profile" "/tmp/rust_mozprofilePFWcPZ"
-1641085642314	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePFWcPZ/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:48315/devtools/browser/15b09b7a-5ad7-4809-8df8-d0615f90983b
-1641085643291	Marionette	INFO	Listening on port 42853
-1641085643307	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641092964625	geckodriver	INFO	Listening on 127.0.0.1:46405
+1641092966740	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42805" "-no-remote" "-profile" "/tmp/rust_mozprofileRaYH8s"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641092967310	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:42805/devtools/browser/000a73e8-a768-443a-9c00-4ef7530cf842
+1641092968835	Marionette	INFO	Listening on port 34821
+1641092968892	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 479: TypeError: this.cloneScope is null
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: moz-extension://a89207d4-3afc-4dab-874b-c81124a022ee/inject/fallback.js, line 4: SecurityError: Permission denied to access property "document" on cross-origin object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 236 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
-JavaScript error: https://ir.ebaystatic.com/rs/c/inception-LgLVewyK.js, line 6: NetworkError: A network error occurred.
-JavaScript error: https://ir.ebaystatic.com/rs/c/inception-LgLVewyK.js, line 6: NetworkError: A network error occurred.
-JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5178 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript warning: https://src.ebay-us.com/qmRETG40QnN6nSvB?b1319337e091b1d4=MU_LoYvlaKkUPtIzsFVwrcVavVT5XOZhBeCUDelcJbbi2iVg-zxxPFcof62yUT6WjXuML3mrASV-cJbwCkkhdVN_wkyNPF-IE8JctQtVrFhCxdqlRIvNImaPxX5BYuUo9oWiZHtO_rPGV35037HVlUwzl-0rDXU1r2vXdezdYafSFPS5d8pjSiHm9gsD_o62r-LMhLdyrHg&jb=3539262468736f773d4e696e75782668736d3d4e696c77782468716a7d3f4e6b726d666d7a266a71623f46697265666d782732323937, line 243: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
-JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
-JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
-JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3890 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1641085669006	Marionette	INFO	Stopped listening on port 42853
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2509 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2695 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641093022814	Marionette	INFO	Stopped listening on port 34821
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1641085671322	geckodriver	INFO	Listening on 127.0.0.1:34765
-1641085671325	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49395" "-no-remote" "-profile" "/tmp/rust_mozprofile0kRmEi"
-1641085672011	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0kRmEi/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:49395/devtools/browser/08025def-8bbd-432a-a8cc-8cf9a2070695
-1641085673036	Marionette	INFO	Listening on port 43901
-1641085673139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641093078604	geckodriver	INFO	Listening on 127.0.0.1:37515
+1641093080710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60009" "-no-remote" "-profile" "/tmp/rust_mozprofileSuCoMp"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641093081270	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:60009/devtools/browser/9c9fb997-6b29-46ea-9a3f-0d9ecfe5f4df
+1641093082817	Marionette	INFO	Listening on port 44889
+1641093082994	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7213 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
-JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7656 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3089 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-1641085686718	Marionette	INFO	Stopped listening on port 43901
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641093100901	Marionette	INFO	Stopped listening on port 44889
+[Parent 15409, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-1641086469933	geckodriver	INFO	Listening on 127.0.0.1:53825
-1641086469936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39945" "-no-remote" "-profile" "/tmp/rust_mozprofileaKKpw4"
-1641086470651	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaKKpw4/search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:39945/devtools/browser/814357eb-7193-463b-bff3-4f64d78400da
-1641086471689	Marionette	INFO	Listening on port 42829
-1641086471748	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641093103472	geckodriver	INFO	Listening on 127.0.0.1:50669
+1641093105545	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39291" "-no-remote" "-profile" "/tmp/rust_mozprofilei2nXbC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641093106111	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:39291/devtools/browser/c4a77f83-3047-4d7e-8bef-2a1cc1fd42ab
+1641093107630	Marionette	INFO	Listening on port 40473
+1641093107682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 479: TypeError: this.cloneScope is null
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
 JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=grade+303+elgin&LH_Complete=1&LH_Sold=1, line 1: TypeError: r[1] is undefined
-JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4338 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
-1641086518930	Marionette	INFO	Stopped listening on port 42829
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1117 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2013 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641093117566	Marionette	INFO	Stopped listening on port 40473
+[Parent 15856, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
