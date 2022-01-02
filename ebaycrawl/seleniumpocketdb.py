@@ -5,6 +5,21 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from time import sleep
 from bs4 import BeautifulSoup
+import threading
+import time
+import concurrent.futures
+from random import randint
+
+user_agent = []
+
+headers = [
+    "Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1;)",
+    "Microsoft; Lumia 640 XL LTE)",
+    "AppleWebKit/537.36 (KHTML, like Gecko)",
+    "Chrome/42.0.2311.135 Mobile",
+    "Safari/537.36",
+    "Edge/12.10166",
+]
 
 
 def getSoldData(watchGrade):
@@ -13,8 +28,7 @@ def getSoldData(watchGrade):
     password = "0Running!"
 
     # use firefox profile
-    fp = wd.FirefoxProfile(
-        "/home/alec/.mozilla/firefox/87syjf8o.default-release")
+    fp = wd.FirefoxProfile("/home/alec/.mozilla/firefox/87syjf8o.default-release")
 
     # pocketwatchdb test url
     url = "https://pocketwatchdatabase.com/guide/company/elgin/grade/{}/value"
@@ -22,7 +36,7 @@ def getSoldData(watchGrade):
     # create and start firefox browser
     options = Options()
     options.headless = True
-    browser = wd.Firefox(fp, options=options)
+    browser = wd.Firefox(fp)  # , options=options)
     browser.implicitly_wait(10)
     browser.get(url.format(watchGrade))
 
@@ -32,7 +46,9 @@ def getSoldData(watchGrade):
     login_link.click()
 
     # enter email address on login prompt
-    login_email_xpath = "/html/body/div[4]/div/div/div[2]/div/div[1]/form/div/div[1]/input"
+    login_email_xpath = (
+        "/html/body/div[4]/div/div/div[2]/div/div[1]/form/div/div[1]/input"
+    )
     login_email_textbox = browser.find_element_by_xpath(login_email_xpath)
     login_email_textbox.send_keys(email)
 
@@ -40,8 +56,7 @@ def getSoldData(watchGrade):
     login_password_xpath = (
         "/html/body/div[4]/div/div/div[2]/div/div[1]/form/div/div[2]/input"
     )
-    login_password_textbox = browser.find_element_by_xpath(
-        login_password_xpath)
+    login_password_textbox = browser.find_element_by_xpath(login_password_xpath)
     login_password_textbox.send_keys(password)
 
     # press enter to login
@@ -52,13 +67,11 @@ def getSoldData(watchGrade):
 
     # Open Ebay link on page
     button = browser.find_element_by_xpath(ebay_xpath)
+    sleep(randint(5, 12))
     button.send_keys(Keys.CONTROL + Keys.RETURN)
 
     # Switch focus to the Ebay tab
     sleep(2)
-
-    # Parent window
-    p = browser.window_handles[0]
 
     # obtain browser tab window
     c = browser.window_handles[1]
@@ -72,7 +85,7 @@ def getSoldData(watchGrade):
     # perform action on Ebay tab
     browser.implicitly_wait(10)
     ebay_pagesource = browser.page_source
-    browser.quit()
+    # browser.quit()
 
     soup = BeautifulSoup(ebay_pagesource, "html.parser")
 
@@ -89,4 +102,12 @@ def parse_sold(soups_dict):
     return
 
 
-parse_sold(getSoldData("303"))
+def main(grade_list):
+    for n in grade_list:
+        parse_sold(getSoldData(n))
+        sleep(randint(2, 15))
+
+
+test_gradeList = ["291", "303"]
+
+main(test_gradeList)
