@@ -83,7 +83,6 @@ def getSoldData(watchGrade):
 
 
 def parse_sold(soups_dict):
-    counter = 0
     print("\nSold Listing Results: ")
     results = soups_dict.find_all("div", {"class": "s-item__info clearfix"})
     print(len(results))
