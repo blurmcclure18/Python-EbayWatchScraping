@@ -1,0 +1,7 @@
+import seleniumpocketdb to scraping_second 
+parse sold listings for price in seleniumpocketdb 
+add threading to find sold average prices
+return a dictionary of average prices for each watch grade
+parse the listed items to find title, link, price, buy it now
+use the average price to make a dictionary of watches to buy
+send an email with watches to buy to my email using sendemail.py
