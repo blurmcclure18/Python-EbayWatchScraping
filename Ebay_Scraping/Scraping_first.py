@@ -2,7 +2,11 @@ from bs4 import BeautifulSoup
 import requests
 
 # List of item names to search on eBay
-name_list = ["(303) elgin", "(291) elgin", "(450) elgin",]
+name_list = [
+    "(303) elgin",
+    "(291) elgin",
+    "(450) elgin",
+]
 
 
 # Returns a list of urls that search eBay for an item
@@ -29,18 +33,19 @@ def ebay_scrape(urls):
         # Raises an exception error if there's an error downloading the website
         res.raise_for_status()
         # Creates a BeautifulSoup object for HTML parsing
-        soup = BeautifulSoup(res.text, 'html.parser')
+        soup = BeautifulSoup(res.text, "html.parser")
         # Scrapes the first listed item's name
-        name = soup.find("h3", {"class": "s-item__title"}).get_text()#separator=u" ")
+        name = soup.find("h3", {"class": "s-item__title"}).get_text()  # separator=u" ")
         # Scrapes the first listed item's price
         price = soup.find("span", {"class": "s-item__price"}).get_text()
-        
+
         something = soup.find("h3", {"class": "s-item__title"})
         # Prints the url, listed item name, and the price of the item
         print(url)
         print("Item Name: " + name)
         print("Price: " + price + "\n")
         print(something)
+
 
 # Runs the code
 # 1. Make the eBay url list
