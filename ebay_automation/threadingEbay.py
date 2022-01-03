@@ -20,7 +20,7 @@ def setupBrowser():
     email = "blurmcclure16@gmail.com"
     password = "ILpeor12!"
 
-    myFirefoxProfile = "/home/alecmcclure/.mozilla/firefox/4bue5rgl.blurmcclure"
+    myFirefoxProfile = "/home/alec/.mozilla/firefox/4bue5rgl.blurmcclure"
 
     # use firefox profile
     fp = wd.FirefoxProfile(myFirefoxProfile)
@@ -110,22 +110,26 @@ def perform_actions(watchGrade, browser):
     return soup
 
 
-def parse_sold(soups_dict):
+def parse_sold(watchGrade, soups):
+    global lock
+    lock = threading.Lock()
     # print("\nSold Listing Results: ")
-    results = soups_dict.find_all("div", {"class": "s-item__info clearfix"})
+    results = soups.find_all("div", {"class": "s-item__info clearfix"})
     numResults = len(results)
+    with lock:
+        myResults[watchGrade] = numResults
+
     return numResults
 
 
 def get_handles(watchGrade, browser):
-    print("Staring Handles")
+    print("\nStaring Handles")
 
-    # WebDriverWait(browser, 10).until(
-    #    EC.presence_of_element_located((By.XPATH, '//*[@id="gh-ac"]'))
-    # )
+    result = parse_sold(watchGrade, perform_actions(watchGrade, browser))
 
-    result = parse_sold(perform_actions(watchGrade, browser))
-    return result
+    # print("\nPrinting Result")
+    # print(result)
+    return
 
 
 def setup_workers(grade_list):
@@ -140,8 +144,8 @@ def setup_workers(grade_list):
         counter += 1
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = dict(executor.map(get_handles, grade_list, browsers))
-    return futures
+        executor.map(get_handles, grade_list, browsers)
+    return
 
     # [browser.quit() for browser in browsers]
 
@@ -150,6 +154,7 @@ test_gradeList = ["291 elgin", "303 elgin"]
 test_grade = "(291) elgin"
 
 print(setup_workers(test_gradeList))
+print(myResults)
 
 # parse_sold(perform_actions(test_grade, setupBrowser()))
 

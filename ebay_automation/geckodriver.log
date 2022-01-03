@@ -3014,3 +3014,383 @@ JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch res
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641233307503	geckodriver	INFO	Listening on 127.0.0.1:40379
+1641233308387	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60953" "-no-remote" "-profile" "/tmp/rust_mozprofileLoIRCR"
+1641233309381	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:60953/devtools/browser/402c5568-4fa5-4baf-8033-c8b678c2932f
+1641233310620	Marionette	INFO	Listening on port 43425
+1641233310723	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641233313379	geckodriver	INFO	Listening on 127.0.0.1:57265
+1641233314366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35199" "-no-remote" "-profile" "/tmp/rust_mozprofilegID7OX"
+1641233315445	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3648 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+DevTools listening on ws://localhost:35199/devtools/browser/ee098c9d-5285-4593-bf09-fe4e96d2237a
+1641233316867	Marionette	INFO	Listening on port 41475
+1641233316904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+[Child 6211, MediaDecoderStateMachine #1] WARNING: Decoder=7efc07bbd300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 6211, MediaDecoderStateMachine #1] WARNING: Decoder=7efc080a1100 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 6545, MediaDecoderStateMachine #1] WARNING: Decoder=7febc7127800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 6545, MediaDecoderStateMachine #1] WARNING: Decoder=7febc7127800 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2642 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 657 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641233353653	Marionette	INFO	Stopped listening on port 41475
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641233354886	Marionette	INFO	Stopped listening on port 43425
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 6033, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+[Parent 6033, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641233358429	geckodriver	INFO	Listening on 127.0.0.1:42829
+1641233359300	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53415" "-no-remote" "-profile" "/tmp/rust_mozprofileUKeh8Q"
+1641233360281	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:53415/devtools/browser/4de9b102-b894-43b4-bb28-284bcb0f57cb
+1641233361549	Marionette	INFO	Listening on port 45629
+1641233361666	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641233364307	geckodriver	INFO	Listening on 127.0.0.1:43325
+1641233365245	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60347" "-no-remote" "-profile" "/tmp/rust_mozprofilegT2HGL"
+1641233366254	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:60347/devtools/browser/526d7856-9cc4-4ab5-a1f7-72d8a11c0b7f
+1641233367539	Marionette	INFO	Listening on port 35035
+1641233367588	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4771 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 7028, MediaDecoderStateMachine #1] WARNING: Decoder=7f95bea80000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 7028, MediaDecoderStateMachine #1] WARNING: Decoder=7f95be9bd400 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 7356, MediaDecoderStateMachine #1] WARNING: Decoder=7fe3e0836d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 7356, MediaDecoderStateMachine #1] WARNING: Decoder=7fe3e01c7d00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+1641233376229	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2134 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5285 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3291 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641233397151	Marionette	INFO	Stopped listening on port 45629
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641233399285	Marionette	INFO	Stopped listening on port 35035
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641233518167	geckodriver	INFO	Listening on 127.0.0.1:58137
+1641233519038	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56917" "-no-remote" "-profile" "/tmp/rust_mozprofilee6SbAf"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641233519961	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:56917/devtools/browser/32e28d96-ddc9-4fa1-8f60-eddc38613cc7
+1641233521336	Marionette	INFO	Listening on port 41281
+1641233521368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641233524035	geckodriver	INFO	Listening on 127.0.0.1:57263
+1641233525040	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35547" "-no-remote" "-profile" "/tmp/rust_mozprofileNCyQUY"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7306 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641233526087	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1387 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+DevTools listening on ws://localhost:35547/devtools/browser/4810074e-c8f7-449f-af8f-8b2f43866472
+1641233527601	Marionette	INFO	Listening on port 43413
+1641233527700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 8146, MediaDecoderStateMachine #1] WARNING: Decoder=7f03f1db7600 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 8146, MediaDecoderStateMachine #1] WARNING: Decoder=7f03f1d5ad00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 8478, MediaDecoderStateMachine #1] WARNING: Decoder=7f717957fe00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 8478, MediaDecoderStateMachine #1] WARNING: Decoder=7f717937cc00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6217 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 541 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641233544818	Marionette	INFO	Stopped listening on port 41281
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641233545519	Marionette	INFO	Stopped listening on port 43413
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 8270, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641234314214	geckodriver	INFO	Listening on 127.0.0.1:49959
+1641234315059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41891" "-no-remote" "-profile" "/tmp/rust_mozprofilesXwoMh"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641234315942	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:41891/devtools/browser/77cec474-e12b-4e1b-a53b-7920da2d5bcc
+1641234317316	Marionette	INFO	Listening on port 44227
+1641234317395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641234319883	geckodriver	INFO	Listening on 127.0.0.1:52927
+1641234320855	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48989" "-no-remote" "-profile" "/tmp/rust_mozprofile4sLkiS"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641234321955	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7349 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+DevTools listening on ws://localhost:48989/devtools/browser/44d69f97-ed71-4082-8494-c81e32689b39
+1641234323491	Marionette	INFO	Listening on port 33379
+1641234323610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 9325, MediaDecoderStateMachine #1] WARNING: Decoder=7fdf203f2b00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+[Child 9325, MediaDecoderStateMachine #1] WARNING: Decoder=7fdf20d14600 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 9669, MediaDecoderStateMachine #1] WARNING: Decoder=7f0804fbc400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 9669, MediaDecoderStateMachine #1] WARNING: Decoder=7f0804ec9700 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5443 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2871 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641234341842	Marionette	INFO	Stopped listening on port 44227
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 9126, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+[Parent 9126, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1641234342376	Marionette	INFO	Stopped listening on port 33379
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641234416126	geckodriver	INFO	Listening on 127.0.0.1:34497
+1641234417011	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37929" "-no-remote" "-profile" "/tmp/rust_mozprofile3KKAfw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641234418071	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:37929/devtools/browser/c65f10f4-88e1-4df6-8d40-c456e0a45dbd
+1641234419421	Marionette	INFO	Listening on port 33709
+1641234419558	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641234422128	geckodriver	INFO	Listening on 127.0.0.1:49447
+1641234423113	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46101" "-no-remote" "-profile" "/tmp/rust_mozprofile31SCFi"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5817 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641234424440	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:46101/devtools/browser/3b82e728-3a7c-4eb2-970d-848ff011ee3c
+1641234426009	Marionette	INFO	Listening on port 33019
+1641234426063	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 10375, MediaDecoderStateMachine #1] WARNING: Decoder=7fe4f107b500 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 10375, MediaDecoderStateMachine #1] WARNING: Decoder=7fe4f0f16800 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 10713, MediaDecoderStateMachine #1] WARNING: Decoder=7fbb0debc500 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+[Child 10713, MediaDecoderStateMachine #1] WARNING: Decoder=7fbb0e5f4000 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1035 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6057 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 440 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641234462090	Marionette	INFO	Stopped listening on port 33709
+[Parent 10145, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641234462816	Marionette	INFO	Stopped listening on port 33019
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 10489, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641234599441	geckodriver	INFO	Listening on 127.0.0.1:34361
+1641234600366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50491" "-no-remote" "-profile" "/tmp/rust_mozprofilezVIkeh"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641234601347	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:50491/devtools/browser/927fd702-c684-4633-9cdc-f804def5a0ca
+1641234602770	Marionette	INFO	Listening on port 46529
+1641234602792	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641234605317	geckodriver	INFO	Listening on 127.0.0.1:34527
+1641234606314	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59797" "-no-remote" "-profile" "/tmp/rust_mozprofilec2eL0w"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4368 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1641234607396	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:59797/devtools/browser/60244773-a2da-4968-bf42-a7905fdf4cf5
+1641234609042	Marionette	INFO	Listening on port 45177
+1641234609205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+[Child 11368, MediaDecoderStateMachine #1] WARNING: Decoder=7fe644f8af00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+[Child 11368, MediaDecoderStateMachine #1] WARNING: Decoder=7fe644ee9a00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: https://ir.ebaystatic.com/rs/c/desktop_ac_1119v1.js, line 37: TypeError: e.suggestionList is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/257fbbb5eb0ba5df3089f03858cc69c1.js, line 7: ReferenceError: z is not defined
+JavaScript error: , line 0: uncaught exception: undefined
+[Child 11714, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b5a9f0b00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+[Child 11714, MediaDecoderStateMachine #1] WARNING: Decoder=7f7b5a689200 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.1/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 3393 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2084 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641234641091	Marionette	INFO	Stopped listening on port 46529
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 11173, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641234642310	Marionette	INFO	Stopped listening on port 45177
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 11509, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
