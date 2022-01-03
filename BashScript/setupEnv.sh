@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pip install bs4 pandas pprint selenium
+pip install bs4 pandas selenium
 
-cp /GeckoWebDriver/geckodriver /usr/local/bin
+cp ./GeckoWebDriver/geckodriver /usr/local/bin

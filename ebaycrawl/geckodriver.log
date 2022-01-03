@@ -1944,3 +1944,169 @@ JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch res
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1641154735584	geckodriver	INFO	Listening on 127.0.0.1:37693
+1641154735587	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=Microsoft; (Lumia 640 XL LTE)" "--remote-debugging-port" "50547" "-no-remote" "-profile" "/tmp/rust_mozprofileZ2gBCh"
+*** You are running in headless mode.
+1641154735985	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZ2gBCh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50547/devtools/browser/6fdc4a9b-4565-4011-a97b-0bd1dece79f4
+1641154737079	Marionette	INFO	Listening on port 42535
+1641154737389	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1641154777604	geckodriver	INFO	Listening on 127.0.0.1:53103
+1641154777606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=Microsoft; (Lumia 640 XL LTE)" "--remote-debugging-port" "58539" "-no-remote" "-profile" "/tmp/rust_mozprofileiqdeNq"
+*** You are running in headless mode.
+1641154777954	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiqdeNq/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58539/devtools/browser/964b50df-7a00-427b-997d-411859f34a51
+1641154779023	Marionette	INFO	Listening on port 32773
+1641154779126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3744 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5527 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641154814449	geckodriver	INFO	Listening on 127.0.0.1:58401
+1641154814451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=Safari/537.36" "--remote-debugging-port" "50039" "-no-remote" "-profile" "/tmp/rust_mozprofile2LYSI9"
+*** You are running in headless mode.
+1641154814803	Marionette	INFO	Marionette enabled
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1641154823192	geckodriver	INFO	Listening on 127.0.0.1:35251
+1641154823194	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=Chrome/42.0.2311.135 (Mobile)" "--remote-debugging-port" "58459" "-no-remote" "-profile" "/tmp/rust_mozprofileSTGD8R"
+*** You are running in headless mode.
+1641154823542	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSTGD8R/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58459/devtools/browser/077b7213-eb26-42a5-bf0a-dfa12fd5aecc
+1641154824448	Marionette	INFO	Listening on port 38307
+1641154824505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2930 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+1641154842328	Marionette	INFO	Stopped listening on port 38307
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641154844826	geckodriver	INFO	Listening on 127.0.0.1:42809
+1641154844828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "user-agent=Safari/537.36" "--remote-debugging-port" "42251" "-no-remote" "-profile" "/tmp/rust_mozprofileRmEbJk"
+*** You are running in headless mode.
+1641154845183	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRmEbJk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42251/devtools/browser/9e78674b-2ad7-4e06-8549-6dadcb55bf3b
+1641154846195	Marionette	INFO	Listening on port 34971
+1641154846561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4515 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641154888510	geckodriver	INFO	Listening on 127.0.0.1:56023
+1641154888513	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "user-agent=Safari/537.36" "--remote-debugging-port" "37167" "-no-remote" "-profile" "/tmp/rust_mozprofilek7shEq"
+1641154889224	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilek7shEq/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37167/devtools/browser/ab88137b-fdae-470d-97a7-e429131e1fd7
+1641154890233	Marionette	INFO	Listening on port 42499
+1641154890324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5566 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+1641154919290	Marionette	INFO	Stopped listening on port 42499
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641154923818	geckodriver	INFO	Listening on 127.0.0.1:51947
+1641154923820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "user-agent=Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1;)" "--remote-debugging-port" "59421" "-no-remote" "-profile" "/tmp/rust_mozprofileVRuB2V"
+1641154924508	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVRuB2V/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59421/devtools/browser/9970ed6a-0296-4b1f-8f0d-87ff17c8bd13
+1641154925482	Marionette	INFO	Listening on port 41983
+1641154925533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 5507 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28303%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+1641154942258	Marionette	INFO	Stopped listening on port 41983
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1641155689254	geckodriver	INFO	Listening on 127.0.0.1:43965
+1641155689258	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37821" "-no-remote" "-profile" "/tmp/rust_mozprofilexlP7IM"
+1641155689796	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexlP7IM/search.json.mozlz4", (void 0)))
+console.warn: TopSitesFeed: Contile endpoint returned unexpected status: 403
+DevTools listening on ws://localhost:37821/devtools/browser/100d6798-b948-401f-8d50-e95084174f7e
+1641155690753	Marionette	INFO	Listening on port 40371
+1641155690771	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 794 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6254 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+1641155720191	Marionette	INFO	Stopped listening on port 40371
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641155723641	geckodriver	INFO	Listening on 127.0.0.1:33031
+1641155723644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48275" "-no-remote" "-profile" "/tmp/rust_mozprofilep7sJLm"
+1641155724180	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilep7sJLm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48275/devtools/browser/d28e7acd-2131-4e3c-923c-ebe3fe5c2c7b
+1641155725255	Marionette	INFO	Listening on port 33427
+1641155726041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: TopSitesFeed: Contile endpoint returned unexpected status: 403
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1130 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641155767665	Marionette	INFO	Stopped listening on port 33427
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641155943558	geckodriver	INFO	Listening on 127.0.0.1:47965
+1641155943926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53687" "-no-remote" "-profile" "/tmp/rust_mozprofile14u2jO"
+1641155944351	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:53687/devtools/browser/eeed66ae-8648-439c-940a-9c17289a7f99
+1641155945378	Marionette	INFO	Listening on port 37445
+1641155945437	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2515 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6204 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://aaeffb85-07e4-4d6d-8f6a-6104dc20abeb/inject/index.js, line 2654: TypeError: styleElement is null
+1641155963606	geckodriver	INFO	Listening on 127.0.0.1:47819
+1641155963962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57307" "-no-remote" "-profile" "/tmp/rust_mozprofile02ISsl"
+1641155964382	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:57307/devtools/browser/c260ce75-d868-40dd-976c-b850d655ad0e
+1641155965475	Marionette	INFO	Listening on port 42613
+1641155965574	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4075 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28303%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://aaeffb85-07e4-4d6d-8f6a-6104dc20abeb/inject/index.js, line 2654: TypeError: styleElement is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2031 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7288 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641156006878	Marionette	INFO	Stopped listening on port 37445
+JavaScript error: resource://services-sync/engines/extension-storage.js, line 53: TypeError: Svc.Prefs is undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641156008077	Marionette	INFO	Stopped listening on port 42613
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo

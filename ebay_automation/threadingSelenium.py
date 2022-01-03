@@ -11,11 +11,20 @@ import time
 import concurrent.futures
 from random import randint
 
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 
-def getSoldData(watchGrade):
-    # Credentials for pocketwatchdb
-    email = "blurmcclure16@gmail.com"
-    password = "0Running!"
+# Credentials for pocketwatchdb
+email = "blurmcclure16@gmail.com"
+password = "0Running!"
+
+myResults = {}
+
+
+def setup_fx_driver(watchGrade):
 
     myFirefoxProfile = "/home/alecmcclure/.mozilla/firefox/4bue5rgl.blurmcclure"
 
@@ -39,23 +48,28 @@ def getSoldData(watchGrade):
     browser.implicitly_wait(10)
     browser.get(url.format(watchGrade))
 
+    return browser
+
+
+def perform_Actions(driver):
+
     # Press login link on page
     login_xpath = "/html/body/div[2]/div[1]/div/div/div[2]/div[2]/div[1]/table/tbody/tr[1]/td[2]/h6/a/u"
-    login_link = browser.find_element_by_xpath(login_xpath)
+    login_link = driver.find_element_by_xpath(login_xpath)
     login_link.click()
 
     # enter email address on login prompt
     login_email_xpath = (
         "/html/body/div[4]/div/div/div[2]/div/div[1]/form/div/div[1]/input"
     )
-    login_email_textbox = browser.find_element_by_xpath(login_email_xpath)
+    login_email_textbox = driver.find_element_by_xpath(login_email_xpath)
     login_email_textbox.send_keys(email)
 
     # enter password on login prompt
     login_password_xpath = (
         "/html/body/div[4]/div/div/div[2]/div/div[1]/form/div/div[2]/input"
     )
-    login_password_textbox = browser.find_element_by_xpath(login_password_xpath)
+    login_password_textbox = driver.find_element_by_xpath(login_password_xpath)
     login_password_textbox.send_keys(password)
 
     # press enter to login
@@ -65,31 +79,30 @@ def getSoldData(watchGrade):
     ebay_xpath = "/html/body/div[2]/div[1]/div[1]/div/div[2]/div[2]/div/div[4]/table/tbody/tr[3]/td[2]/a"
 
     # Open Ebay link on page
-    button = browser.find_element_by_xpath(ebay_xpath)
+    button = driver.find_element_by_xpath(ebay_xpath)
     sleep(randint(5, 12))
     button.send_keys(Keys.CONTROL + Keys.RETURN)
 
-    # Switch focus to the Ebay tab
-    sleep(2)
-
     # obtain browser tab window
-    c = browser.window_handles[1]
+    c = driver.window_handles[1]
 
     # close browser tab window
-    browser.close()
+    driver.close()
 
     # switch to tab browser
-    browser.switch_to.window(c)
+    driver.switch_to.window(c)
 
     # perform action on Ebay tab
-    browser.implicitly_wait(10)
-    ebay_pagesource = browser.page_source
+    driver.implicitly_wait(10)
+    ebay_pagesource = driver.page_source
+
+    with open("ebaySource.html", "w") as writer:
+        writer.write(ebay_pagesource)
 
     # Close the browser
     # browser.quit()
 
     soup = BeautifulSoup(ebay_pagesource, "html.parser")
-
     return soup
 
 
@@ -100,13 +113,39 @@ def parse_sold(soups_dict):
     return
 
 
-def main(grade_list):
-    for n in grade_list:
-        parse_sold(getSoldData(n))
-        sleep(randint(2, 15))
-    return
+def get_handles(driver):
+
+    login_xpath = "/html/body/div[2]/div[1]/div/div/div[2]/div[2]/div[1]/table/tbody/tr[1]/td[2]/h6/a/u"
+
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, login_xpath))
+    )
+
+    parse_sold(perform_Actions(driver))
+
+
+def setup_workers(grade_list):
+
+    workers = len(grade_list)
+
+    drivers = []
+    counter = 0
+    # drivers = [setup_fx_driver(grade_list) for _ in range(workers)]
+    while len(drivers) < workers:
+        drivers.append(setup_fx_driver(grade_list[counter]))
+        counter += 1
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+        executor.map(get_handles, drivers)
+
+    # [driver.quit() for driver in drivers]
 
 
 test_gradeList = ["291", "303"]
+test_grade = "291"
+setup_workers(test_gradeList)
+# setup_fx_driver(test_gradeList)
 
-main(test_gradeList)
+# parse_sold(perform_Actions(setup_fx_driver(test_grade)))
+
+# print(perform_Actions(setup_fx_driver(test_grade)))

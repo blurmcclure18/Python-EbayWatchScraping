@@ -1,0 +1,47 @@
+1641162218021	geckodriver	INFO	Listening on 127.0.0.1:41069
+1641162218385	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47609" "-no-remote" "-profile" "/tmp/rust_mozprofile7pDtzR"
+1641162218810	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:47609/devtools/browser/13ffe6d3-ad86-4e64-a7cd-48ce501c8d1e
+1641162219889	Marionette	INFO	Listening on port 36377
+1641162219998	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 84 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3458 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28291%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://aaeffb85-07e4-4d6d-8f6a-6104dc20abeb/inject/index.js, line 2654: TypeError: styleElement is null
+1641162254950	geckodriver	INFO	Listening on 127.0.0.1:44887
+1641162255811	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33717" "-no-remote" "-profile" "/tmp/rust_mozprofilegYyFb0"
+1641162256316	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:33717/devtools/browser/3e04c579-4350-492a-ac73-6e0ee55d0100
+1641162257425	Marionette	INFO	Listening on port 39759
+1641162257523	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6530 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4039 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3665 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=%28303%29+Elgin&_sacat=3937&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5337798087&customid=&toolid=10001&mkevt=1&rt=nc&LH_Sold=1&LH_Complete=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://aaeffb85-07e4-4d6d-8f6a-6104dc20abeb/inject/index.js, line 2654: TypeError: styleElement is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7718 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641162321109	Marionette	INFO	Stopped listening on port 39759
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641162322418	Marionette	INFO	Stopped listening on port 36377
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-sync/engines/extension-storage.js, line 53: TypeError: Svc.Prefs is undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
