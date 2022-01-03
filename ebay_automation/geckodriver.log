@@ -2996,3 +2996,21 @@ _tokenServerExchangeRequest@tokenserverclient.js:241:13
 _tokenServerExchangeRequest@tokenserverclient.js:241:13
 1641177381261	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
 1641177381262	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641177435206	Marionette	INFO	Stopped listening on port 42221
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641177435714	Marionette	INFO	Stopped listening on port 33321
+[Parent 123522, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-SBqOTO/firefox-95.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
