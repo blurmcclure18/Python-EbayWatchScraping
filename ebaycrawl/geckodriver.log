@@ -2110,3 +2110,6 @@ JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch res
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641177674232	Marionette	INFO	Stopped listening on port 34971
+Exiting due to channel error.
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/12761/stat
