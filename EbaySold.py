@@ -16,15 +16,6 @@ currentDir = os.path.dirname(__file__)
 SourceFiles = "SourceFiles"
 SourceFilesDir = currentDir + "/" + SourceFiles
 
-if os.name == "posix":
-    driverPath = currentDir + "/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
-elif os.name == "nt":
-    driverPath = (
-        currentDir + "/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
-    )
-
-input("view Output")
-
 # Create funtions to use in program
 def createSourceDir():
     # Create the folder to store temp html files
@@ -58,7 +49,7 @@ def headlessBrowser():
     firefoxOptions.headless = True
 
     # Run the browser
-    browser = wd.Firefox(fp, driverPath, options=firefoxOptions)
+    browser = wd.Firefox(fp, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 

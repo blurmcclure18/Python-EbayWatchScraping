@@ -1,2 +1,1 @@
-cp ./WinGeckoWebDriver/geckodriver.exe C:\Program Files\GeckoWebDriver
-
+$env:Path += "; ./WinGeckoWebDriver/geckodriver.exe"
