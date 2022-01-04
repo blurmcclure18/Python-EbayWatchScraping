@@ -8201,3 +8201,848 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1641331769438	geckodriver	INFO	Listening on 127.0.0.1:45819
+1641331769621	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47279" "-no-remote" "-profile" "/tmp/rust_mozprofileIx9tTO"
+1641331770058	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:47279/devtools/browser/5b3c6797-286e-4dc0-b0cc-57e3f564d16b
+1641331770902	Marionette	INFO	Listening on port 41665
+1641331770942	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 579 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileIx9tTO/thumbnails) because it does not exist
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=%28291%29+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+1641331816623	Marionette	INFO	Stopped listening on port 41665
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641331817049	geckodriver	INFO	Listening on 127.0.0.1:56401
+1641331817231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36189" "-no-remote" "-profile" "/tmp/rust_mozprofiled4Rw1Y"
+1641331817744	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:36189/devtools/browser/baa21563-7070-4e3a-a7cb-d86af5a3355b
+1641331818634	Marionette	INFO	Listening on port 38469
+1641331818744	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641331833163	Marionette	INFO	Stopped listening on port 38469
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641331835234	geckodriver	INFO	Listening on 127.0.0.1:44573
+1641331835418	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53111" "-no-remote" "-profile" "/tmp/rust_mozprofile9Pkqzr"
+1641331835849	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:53111/devtools/browser/f49d2d09-0b45-41e1-bb99-8f11a7ddc9af
+1641331836741	Marionette	INFO	Listening on port 38775
+1641331836834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641331855516	Marionette	INFO	Stopped listening on port 38775
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641332705382	geckodriver	INFO	Listening on 127.0.0.1:40587
+1641332706669	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50373" "-no-remote" "-profile" "/tmp/rust_mozprofileQdPO4L"
+1641332707108	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+webRequest.onBeforeRequest event fired after context unloaded.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:50373/devtools/browser/9075f4f0-f8d4-4222-a7f2-9f113927adf5
+1641332708155	Marionette	INFO	Listening on port 40245
+1641332708185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4988 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+1641332715872	Marionette	INFO	Stopped listening on port 40245
+cookies.onChanged event fired after context unloaded.
+cookies.onChanged event fired after context unloaded.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+tabs.onRemoved event fired after context unloaded.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641332716365	geckodriver	INFO	Listening on 127.0.0.1:54965
+1641332717667	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42357" "-no-remote" "-profile" "/tmp/rust_mozprofileaKef6N"
+1641332718133	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:42357/devtools/browser/1891326e-c6af-430d-8e0b-b95455c80837
+1641332719211	Marionette	INFO	Listening on port 33949
+1641332719285	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1935 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641332740674	Marionette	INFO	Stopped listening on port 33949
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641332830658	geckodriver	INFO	Listening on 127.0.0.1:47341
+1641332830843	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52007" "-no-remote" "-profile" "/tmp/rust_mozprofileIf6LKs"
+1641332831287	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:52007/devtools/browser/f5dec35e-cabb-4862-8b52-fd61bc28cc7a
+1641332832146	Marionette	INFO	Listening on port 39933
+1641332832254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5264 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://src.ebay-us.com/-Wk5QEpuKr5-JN-x?857b49fe49d3ca0d=9OReVBnPmYfHk4N0R_q4-X-i52QMB1msvhGVXs2a8Ojc3Gd0JxeQ_Otd-rUyb1uFm5gTmNozeY-nTcvt0mt2UVP9dljne98RBPV_6l6vpD1Q2P2Cu4GUGKiIpCC0qX-409QCzXX00GAg2eJidFByimRErzCJwJFX6GVIJgskN6tOhmxzQUIPWOtENWLEOD-aiDNtYPdClII&jb=3733262468716d753d4e696e7578266a736f3f4c6966757a24687160753f466b7067666d7a246873623f46697265666f78253030393d, line 314: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileIf6LKs/thumbnails) because it does not exist
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6424 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 569 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641332873158	Marionette	INFO	Stopped listening on port 39933
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 126137, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-SBqOTO/firefox-95.0.1+build2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641332873645	geckodriver	INFO	Listening on 127.0.0.1:34189
+1641332874962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35629" "-no-remote" "-profile" "/tmp/rust_mozprofileFMkbyJ"
+1641332875419	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:35629/devtools/browser/04a4dd1d-7ec6-4f21-942e-f712b952b7fa
+1641332876451	Marionette	INFO	Listening on port 45123
+1641332876483	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6686 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641332935990	geckodriver	INFO	Listening on 127.0.0.1:37041
+1641332937306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50645" "-no-remote" "-profile" "/tmp/rust_mozprofileIIZda3"
+1641332937736	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:50645/devtools/browser/8d9fe72f-4655-4ad1-a185-7a55dc62fd75
+1641332938768	Marionette	INFO	Listening on port 38161
+1641332938819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://src.ebay-us.com/oQvtpHdxWsqwBsRZ?1519ea070216bfbd=yDVmvCcLoB4p5kYR8zPZ7eqnCzMKggjoa5PGP0GtDfwQ47QirQNZhmqDQGq6VDl4wY7q5Lwwi-49yiESo236Y4Uf72Hb5tY0-MS4SbLHBa0_BJX7U3E3vPB9AjyaO50TvZ4DoAzNyeDArEkPerxCJAUCBuJr849mGp_dkl6h0cJi0XswjLn8cDO3lyx-8x16pBAdu2iz4PM&jb=373326266a7b6f773d4e696e757a246271673d44696c757a24687160773f46697067666f782e6a71623f4669726764677a2d32383937, line 308: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4790 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641333033589	geckodriver	INFO	Listening on 127.0.0.1:53121
+1641333033773	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54939" "-no-remote" "-profile" "/tmp/rust_mozprofileiXSraS"
+1641333034209	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:54939/devtools/browser/fcb686aa-e555-4364-ac82-3fb996d44009
+1641333035137	Marionette	INFO	Listening on port 41051
+1641333035186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641333036716	Marionette	INFO	Stopped listening on port 41051
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641333037185	geckodriver	INFO	Listening on 127.0.0.1:42611
+1641333038479	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59443" "-no-remote" "-profile" "/tmp/rust_mozprofileotp0LL"
+1641333038905	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:59443/devtools/browser/6fcdb991-79a1-4667-9697-f716479a458d
+1641333039932	Marionette	INFO	Listening on port 43501
+1641333039991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5813 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://src.ebay-us.com/1pRScGoETH5waFj4?4adb4b6171f066e4=LFUFpafe3uMgijpqXcJs-fpW-ISeoeNFqDb05B-FlHyr3M6g--6WzTfB8HkBEQYTTxo403Sufu1e24-1kcA49HFw-kn0vmg52JkCNklMD0GRiaZ8NPCCXNp0k0LgE1N9RaBpK8-KlL-VlGA-yDUg9QBTBXSsB2Wu0uRuF4nVj9FhqCBkx2CZ20H6j3Z2ecU76QzSbeIIkLQ&jb=373326246a736f773d4e696e75782e6a716f3d4e6b6c777824687160773f4e697067666d78266a71623f466972656e6f7a2532323b37, line 503: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+1641333046670	Marionette	INFO	Stopped listening on port 43501
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641333047185	geckodriver	INFO	Listening on 127.0.0.1:51465
+1641333047367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36371" "-no-remote" "-profile" "/tmp/rust_mozprofileDWbhpC"
+1641333047805	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:36371/devtools/browser/72d4435f-9e3e-46e0-b79f-b35dcb19f6c7
+1641333048839	Marionette	INFO	Listening on port 42393
+1641333048881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641333050394	geckodriver	INFO	Listening on 127.0.0.1:45507
+1641333050578	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57387" "-no-remote" "-profile" "/tmp/rust_mozprofilepUuq36"
+1641333051047	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:57387/devtools/browser/64ff09ff-5daa-4969-8e88-23ad9ebffb9e
+1641333052070	Marionette	INFO	Listening on port 35103
+1641333052089	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641333057586	Marionette	INFO	Stopped listening on port 42393
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641333058662	Marionette	INFO	Stopped listening on port 35103
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
+
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641333064373	geckodriver	INFO	Listening on 127.0.0.1:48163
+1641333064560	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53893" "-no-remote" "-profile" "/tmp/rust_mozprofileilm62B"
+1641333065000	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:53893/devtools/browser/9c3e233e-4531-4fc9-b6be-e5cb55157822
+1641333065845	Marionette	INFO	Listening on port 40739
+1641333065874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileilm62B/thumbnails) because it does not exist
+1641333097297	Marionette	INFO	Stopped listening on port 40739
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641333131786	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1641333141444	geckodriver	INFO	Listening on 127.0.0.1:39177
+1641333142734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "32935" "-no-remote" "-profile" "/tmp/rust_mozprofilediW5Zp"
+*** You are running in headless mode.
+1641333142869	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+JavaScript error: resource://gre/modules/ConduitsParent.jsm, line 163: Error: Bad reset-search-defaults@mozilla.com principal: moz-extension://e9365437-333a-4534-9d7e-463bbebd96be/_generated_background_page.html
+JavaScript error: resource://gre/modules/ConduitsParent.jsm, line 438: Error: Unknown sender or wrong actor for recvCreateProxyContext
+JavaScript error: resource://gre/modules/ConduitsParent.jsm, line 438: Error: Unknown sender or wrong actor for recvAPICall
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:32935/devtools/browser/ea1cd576-05cc-414e-bb48-70ba1fb4d043
+1641333143868	Marionette	INFO	Listening on port 36475
+1641333143947	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641333145809	geckodriver	INFO	Listening on 127.0.0.1:57255
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5713 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641333147092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "53083" "-no-remote" "-profile" "/tmp/rust_mozprofileJxThlz"
+*** You are running in headless mode.
+1641333147222	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+DevTools listening on ws://localhost:53083/devtools/browser/4036516c-c7d1-4ea1-a3f9-105172b7e990
+1641333148438	Marionette	INFO	Listening on port 33833
+1641333148503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641333150438	geckodriver	INFO	Listening on 127.0.0.1:49455
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4344 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641333152253	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59869" "-no-remote" "-profile" "/tmp/rust_mozprofileWUccnj"
+*** You are running in headless mode.
+1641333152395	Marionette	INFO	Marionette enabled
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+webRequest.onBeforeRequest event fired after context unloaded.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+DevTools listening on ws://localhost:59869/devtools/browser/1b707199-9db3-4b4c-82ec-9f84f47557d9
+1641333153393	Marionette	INFO	Listening on port 45971
+1641333153464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641333153848	Marionette	INFO	Stopped listening on port 45123
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 668 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 7462 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 4295 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2287 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6181 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+1641333171533	Marionette	INFO	Stopped listening on port 45971
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+1641333175656	Marionette	INFO	Stopped listening on port 33833
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6883 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

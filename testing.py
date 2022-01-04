@@ -47,7 +47,7 @@ def headlessBrowser():
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
-    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
+    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfileold/")
 
     # Use Firefox profile
     fp = wd.FirefoxProfile(firefoxProfile)
@@ -66,10 +66,12 @@ def headlessBrowser():
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
-    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookies.pkl"), "rb"))
+    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookiesNew.pkl"), "rb"))
 
     for cookie in cookies:
         browser.add_cookie(cookie)
+
+    browser.refresh()
 
     return browser
 
@@ -96,10 +98,6 @@ def captchaBrowser():
     browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_Url)
-
-    pickle.dump(
-        browser.get_cookies(), open(os.path.join(SourceFilesDir, "cookies.pkl"), "wb")
-    )
 
     # Return the browser to use in Threading
     input("Press Enter when Captcha is Completed...")
@@ -252,9 +250,9 @@ def main(gradeList):
     createSourceDir()
 
     # Check for captcha and complete it if required
-    # captchaCheck(headlessBrowser())
+    captchaCheck(headlessBrowser())
 
-    captchaBrowser()
+    # captchaBrowser()
 
     # Get Data
     setup_workers(gradeList)

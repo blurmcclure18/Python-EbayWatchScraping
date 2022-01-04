@@ -66,7 +66,7 @@ def headlessBrowser():
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
-    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookies.pkl"), "rb"))
+    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookiesNew.pkl"), "rb"))
 
     for cookie in cookies:
         browser.add_cookie(cookie)
@@ -80,7 +80,7 @@ def captchaBrowser():
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
-    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
+    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfileold/")
 
     # Use Firefox profile
     fp = wd.FirefoxProfile(firefoxProfile)
@@ -103,7 +103,8 @@ def captchaBrowser():
     input("Press Enter when Captcha is Completed...")
 
     pickle.dump(
-        browser.get_cookies(), open(os.path.join(SourceFilesDir, "cookies.pkl"), "wb")
+        browser.get_cookies(),
+        open(os.path.join(SourceFilesDir, "cookiesNew.pkl"), "wb"),
     )
 
     browser.quit()
