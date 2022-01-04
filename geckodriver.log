@@ -4893,3 +4893,153 @@ JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_saca
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1641272224264	geckodriver	INFO	Listening on 127.0.0.1:33773
+1641272225513	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35419" "-no-remote" "-profile" "/tmp/rust_mozprofile1ndysd"
+1641272226982	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:35419/devtools/browser/566b9b12-5964-42fa-8328-2936dfe5d1a3
+1641272228570	Marionette	INFO	Listening on port 42957
+1641272228652	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641272231640	geckodriver	INFO	Listening on 127.0.0.1:38883
+1641272232947	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44617" "-no-remote" "-profile" "/tmp/rust_mozprofile4BbaEi"
+1641272234772	Marionette	INFO	Marionette enabled
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6331 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+[Child 13976, MediaDecoderStateMachine #1] WARNING: Decoder=7fbcbd0fc800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.2/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/a7f89458c728cebcdaf5006b3fb36e31.js, line 7: ReferenceError: z is not defined
+[Child 13976, MediaDecoderStateMachine #1] WARNING: Decoder=7fbcae7d1a00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.2/dom/media/MediaDecoderStateMachine.cpp:3568
+DevTools listening on ws://localhost:44617/devtools/browser/a233c5a8-4b77-4861-9aed-a0341ee4d1d1
+1641272237481	Marionette	INFO	Listening on port 39599
+1641272237662	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 5017 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/jose/4.3.7/index.js, line 1: SyntaxError: export declarations may only appear at top level of a module
+[Child 14330, MediaDecoderStateMachine #1] WARNING: Decoder=7f5ec4603900 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - auto mozilla::SupportChecker::AddMediaFormatChecker(const mozilla::TrackInfo &)::(anonymous class)::operator()() const: Decoder may not have the capability to handle the requested video format with YUV444 chroma subsampling.: file /build/firefox/src/firefox-95.0.2/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: https://careerkarma.com/blog/wp-content/uploads/hummingbird-assets/a7f89458c728cebcdaf5006b3fb36e31.js, line 7: ReferenceError: z is not defined
+[Child 14330, MediaDecoderStateMachine #1] WARNING: Decoder=7f5ec496aa00 Decode error: NS_ERROR_OUT_OF_MEMORY (0x8007000e) - ProcessDecode: file /build/firefox/src/firefox-95.0.2/dom/media/MediaDecoderStateMachine.cpp:3568
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=303+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 268 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641272259374	Marionette	INFO	Stopped listening on port 39599
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 14120, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=291+elgin&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+1641272268951	Marionette	INFO	Stopped listening on port 42957
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 13775, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+[Parent 13775, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

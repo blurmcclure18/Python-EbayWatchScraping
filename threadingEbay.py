@@ -1,34 +1,30 @@
-from os import path
+import os
+import threading
+import shutil as sh
+from time import sleep
+from pathlib import Path
+import concurrent.futures
+from random import randint
+from bs4 import BeautifulSoup
 from selenium import webdriver as wd
-from selenium.webdriver.common import keys
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
-
-from bs4 import BeautifulSoup
-import threading
-from time import sleep
-import concurrent.futures
-from pathlib import Path
-import os
-from random import randint
-import shutil as sh
-
-resultsCounter = 0
-myResults = {}
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 currentDir = os.path.dirname(__file__)
 SourceFiles = "SourceFiles"
 
+SourceFilesDir = currentDir + '/' + SourceFiles
+
+def createSourceDir():
+    try:
+        os.mkdir(SourceFiles)
+    except:
+        pass
+
+
 def fool():
     sleep(randint(1,10))
-
-try:
-    os.mkdir(SourceFiles)
-except:
-    pass
-
-SourceFilesDir = currentDir + '/' + SourceFiles
 
 def setupBrowser():
     
@@ -100,8 +96,8 @@ def parse_sold(watchGrade):
 
     global resultsCounter
 
-    postNewSoup = open(SourceFilesDir + '/' + f'{watchGrade}.html')
-    newSoup = BeautifulSoup(postNewSoup, 'html.parser')
+    soup = open(SourceFilesDir + '/' + f'{watchGrade}.html')
+    newSoup = BeautifulSoup(soup, 'html.parser')
     results = newSoup.find_all('div', {'class': 's-item__info clearfix'})
 
     numResults = len(results)
@@ -142,9 +138,19 @@ def setup_workers(grade_list):
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         executor.map(get_handles, grade_list, browsers)
 
+def main(gradeList):
+
+    createSourceDir()
+    
+    setup_workers(gradeList)
+    
+    print(myResults)
+    
+    sh.rmtree(SourceFilesDir, ignore_errors=True)
+
 watchgradeList = ["291 elgin", "303 elgin"]
 
-setup_workers(watchgradeList)
-print(myResults)
+resultsCounter = 0
+myResults = {}
 
-sh.rmtree(SourceFilesDir, ignore_errors=True)
+main(watchgradeList)
