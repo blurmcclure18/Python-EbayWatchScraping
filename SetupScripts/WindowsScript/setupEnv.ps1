@@ -1,1 +1,1 @@
-$env:Path += "; ./WinGeckoWebDriver/geckodriver.exe"
+pip install bs4 pandas selenium

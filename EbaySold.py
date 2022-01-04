@@ -16,6 +16,16 @@ currentDir = os.path.dirname(__file__)
 SourceFiles = "SourceFiles"
 SourceFilesDir = currentDir + "/" + SourceFiles
 
+if os.name == "nt":
+    geckoPath = (
+        f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
+    )
+elif os.name == "posix":
+    geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDrvier/geckodriver"
+
+print(geckoPath)
+input()
+
 # Create funtions to use in program
 def createSourceDir():
     # Create the folder to store temp html files
@@ -49,7 +59,7 @@ def headlessBrowser():
     firefoxOptions.headless = True
 
     # Run the browser
-    browser = wd.Firefox(fp, options=firefoxOptions)
+    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
@@ -75,7 +85,7 @@ def captchaBrowser():
     firefoxOptions.headless = False
 
     # Run the browser
-    browser = wd.Firefox(fp, options=firefoxOptions)
+    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
