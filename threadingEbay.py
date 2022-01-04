@@ -44,7 +44,7 @@ def setupBrowser():
     firefoxOptions.headless = True
 
     # Run the browser
-    browser = wd.Firefox(fp)
+    browser = wd.Firefox(fp, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
