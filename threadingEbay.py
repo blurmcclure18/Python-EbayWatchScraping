@@ -22,7 +22,6 @@ def createSourceDir():
     except:
         pass
 
-
 def fool():
     sleep(randint(1,10))
 
@@ -49,7 +48,6 @@ def setupBrowser():
     browser.get(ebay_soldUrl)
 
     return browser
-
 
 def perform_actions(watchGrade, browser):
 
