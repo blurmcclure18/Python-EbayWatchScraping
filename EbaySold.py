@@ -29,6 +29,8 @@ else:
     pass
 
 # Create funtions to use in program
+
+
 def createSourceDir():
     # Create the folder to store temp html files
     try:
@@ -110,21 +112,26 @@ def perform_actions(watchGrade, browser):
 
     fool()
 
-    search_box.send_keys(watchGrade)
+    gradeString = f"elgin grade {watchGrade}"
+
+    search_box.send_keys(gradeString)
     search_box.send_keys(Keys.RETURN)
 
     # change items per page
-    items_dropdown = browser.find_element_by_xpath(
-        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
-    )
-    items_dropdown.click()
+    try:
+        items_dropdown = browser.find_element_by_xpath(
+            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
+        )
+        items_dropdown.click()
 
-    fool()
+        fool()
 
-    items_200 = browser.find_element_by_xpath(
-        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
-    )
-    items_200.click()
+        items_200 = browser.find_element_by_xpath(
+            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
+        )
+        items_200.click()
+    except:
+        pass
 
     # Get the page source html
     ebay_pagesource = browser.page_source
@@ -168,14 +175,20 @@ def parse_sold(watchGrade):
 
         for item in results:
             try:
-                soldprice = float(
-                    item.find("span", {"class": "s-item__price"})
-                    .text.replace("$", "")
-                    .replace(",", "")
-                    .strip()
-                )
-                gradeSoldPrices.append(soldprice)
+                title = item.find(
+                    "h3", {"class": "s-item__title s-item__title--has-tags"}
+                ).text
 
+                if (("elgin" or "Elgin" or "ELGIN") and watchGrade) in title:
+                    soldprice = float(
+                        item.find("span", {"class": "s-item__price"})
+                        .text.replace("$", "")
+                        .replace(",", "")
+                        .strip()
+                    )
+                    gradeSoldPrices.append(soldprice)
+                else:
+                    print(f"\nNot Adding {title}")
             except:
                 pass
 
@@ -221,6 +234,8 @@ def captchaCheck(browser):
 
     verifySource = browser.page_source
 
+    browser.quit()
+
     try:
         soup = BeautifulSoup(verifySource, "html.parser")
         verifyText = soup.find("div", {"id": "areaTitle"}).text
@@ -249,11 +264,11 @@ def main(gradeList):
     print(watchResults)
 
     # Remove our SourceFiles directory to save space
-    # sh.rmtree(SourceFilesDir, ignore_errors=True)
+    sh.rmtree(SourceFilesDir, ignore_errors=True)
 
 
 # Add Keywords for Ebay Search
-watchgradeList = ["291 elgin", "303 elgin"]
+watchgradeList = ["291", "303", "450"]
 
 # Create a counter to increment results dictionary
 resultsCounter = 0
