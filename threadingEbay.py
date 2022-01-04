@@ -28,10 +28,11 @@ def fool():
 
 def setupBrowser():
     
-    myFirefoxProfile = Path(r'/home/alec/Documents/GitHub/Python-EbayAPI/FirefoxProfile/ebayProfile')
+    #myFirefoxProfile = Path(r'/home/alec/Documents/GitHub/Python-EbayAPI/FirefoxProfile/ebayProfile')
+    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
 
     # use firefox profile
-    fp = wd.FirefoxProfile(myFirefoxProfile)
+    fp = wd.FirefoxProfile(firefoxProfile)
 
     # Ebay URL
     ebay_soldUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
@@ -141,7 +142,7 @@ def setup_workers(grade_list):
 def main(gradeList):
 
     createSourceDir()
-    
+
     setup_workers(gradeList)
     
     print(myResults)
