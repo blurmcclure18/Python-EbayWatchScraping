@@ -20,11 +20,13 @@ if os.name == "nt":
     geckoPath = (
         f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
     )
-elif os.name == "posix":
-    geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDrvier/geckodriver"
+else:
+    pass
 
-print(geckoPath)
-input()
+if os.name == "posix":
+    geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
+else:
+    pass
 
 # Create funtions to use in program
 def createSourceDir():

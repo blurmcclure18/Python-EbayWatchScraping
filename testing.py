@@ -16,6 +16,18 @@ currentDir = os.path.dirname(__file__)
 SourceFiles = "SourceFiles"
 SourceFilesDir = currentDir + "/" + SourceFiles
 
+if os.name == "nt":
+    geckoPath = (
+        f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
+    )
+else:
+    pass
+
+if os.name == "posix":
+    geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
+else:
+    pass
+
 # Create funtions to use in program
 def createSourceDir():
     # Create the folder to store temp html files
@@ -30,7 +42,7 @@ def fool():
     sleep(randint(1, 10))
 
 
-def setupBrowser():
+def headlessBrowser():
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
@@ -46,12 +58,14 @@ def setupBrowser():
     firefoxOptions = Options()
 
     # Start a headless browser (comment out the below line to view what the browser is doing )
-    firefoxOptions.headless = True
+    # firefoxOptions.headless = True
 
     # Run the browser
-    browser = wd.Firefox(fp, options=firefoxOptions)
+    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
+
+    input()
 
     return browser
 
@@ -66,7 +80,7 @@ def captchaBrowser():
     fp = wd.FirefoxProfile(firefoxProfile)
 
     # Ebay Sold Listings URL
-    ebay_soldUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
+    ebay_Url = "https://www.ebay.com"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -75,9 +89,9 @@ def captchaBrowser():
     firefoxOptions.headless = False
 
     # Run the browser
-    browser = wd.Firefox(fp, options=firefoxOptions)
+    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
-    browser.get(ebay_soldUrl)
+    browser.get(ebay_Url)
 
     # Return the browser to use in Threading
     input("Press Enter when Captcha is Completed...")
@@ -197,7 +211,7 @@ def setup_workers(grade_list):
 
     # Add open browsers to list to use
     while len(browsers) < workers:
-        browsers.append(setupBrowser())
+        browsers.append(headlessBrowser())
         counter += 1
 
     # Using ThreadPool execute our funtions
@@ -228,7 +242,7 @@ def main(gradeList):
     createSourceDir()
 
     # Check for captcha and complete it if required
-    # captchaCheck(setupBrowser())
+    captchaCheck(headlessBrowser())
 
     # Get Data
     setup_workers(gradeList)
