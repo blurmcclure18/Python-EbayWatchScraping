@@ -65,8 +65,6 @@ def headlessBrowser():
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
-    input()
-
     return browser
 
 
@@ -222,6 +220,8 @@ def setup_workers(grade_list):
 def captchaCheck(browser):
 
     verifySource = browser.page_source
+
+    browser.quit()
 
     try:
         soup = BeautifulSoup(verifySource, "html.parser")
