@@ -249,7 +249,7 @@ def main(gradeList):
     print(watchResults)
 
     # Remove our SourceFiles directory to save space
-    sh.rmtree(SourceFilesDir, ignore_errors=True)
+    # sh.rmtree(SourceFilesDir, ignore_errors=True)
 
 
 # Add Keywords for Ebay Search

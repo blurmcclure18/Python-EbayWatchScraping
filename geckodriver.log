@@ -8042,3 +8042,162 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 
 unMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1641330039530	geckodriver	INFO	Listening on 127.0.0.1:52047
+1641330039715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37591" "-no-remote" "-profile" "/tmp/rust_mozprofilez6PR8f"
+1641330040144	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:37591/devtools/browser/fcc94fa0-6623-4236-bddc-b0c15a43317b
+1641330040996	Marionette	INFO	Listening on port 35745
+1641330041035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641330041926	Marionette	INFO	Stopped listening on port 35745
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641330042317	geckodriver	INFO	Listening on 127.0.0.1:59573
+1641330042503	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46023" "-no-remote" "-profile" "/tmp/rust_mozprofileTutD7T"
+1641330042937	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:46023/devtools/browser/bdc0c1d5-c517-462f-b220-a9122cf5bccb
+1641330043768	Marionette	INFO	Listening on port 44311
+1641330043823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2687 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://src.ebay-us.com/jPnq6vO9VU_NqsMs?67295cfd5ef7701e=4iJyJw2YJ_yqYsjSxDx58eKNMBPvBXhayf_iZnz_xJpIPB02agjJtMkByYnVT49R5ngSr3tskJtTE9in1Yy41BeJ4qBS4xaJXpMUEbdC82M86zaLtZfEfzrS8JPtKbmY5Loiitkia_ILdn1nKR-Zoh8Mn9wxR9gxdxmojl67Qx7AWmI4hMxefBcz7CeGd_cHXrr24xzKy5c&jb=373326266a716d753d4e696e757a2e68736d3d4e6b6e7d7a24687160753546697067666f78246873623f466972676e6d782732323b35, line 262: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1641330117846	geckodriver	INFO	Listening on 127.0.0.1:44415
+1641330118030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51051" "-no-remote" "-profile" "/tmp/rust_mozprofiletSq7NS"
+1641330118471	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:51051/devtools/browser/8418a8f2-af8c-4bff-a7c0-dafaee8ed554
+1641330119397	Marionette	INFO	Listening on port 46143
+1641330119443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641330120497	Marionette	INFO	Stopped listening on port 46143
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641330120901	geckodriver	INFO	Listening on 127.0.0.1:36831
+1641330121086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50653" "-no-remote" "-profile" "/tmp/rust_mozprofileHUFvZw"
+1641330121518	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:50653/devtools/browser/e00b21f9-0e0d-4a12-8e03-2354e4a9332b
+1641330122445	Marionette	INFO	Listening on port 37155
+1641330122499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1641330558265	geckodriver	INFO	Listening on 127.0.0.1:49127
+1641330558447	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59119" "-no-remote" "-profile" "/tmp/rust_mozprofileDIlY18"
+1641330558877	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:59119/devtools/browser/a2ff06d3-4c55-4519-ac93-3a8c54b59e17
+1641330559668	Marionette	INFO	Listening on port 39159
+1641330559759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641330580594	Marionette	INFO	Stopped listening on port 39159
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641330657950	geckodriver	INFO	Listening on 127.0.0.1:58317
+1641330658134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48607" "-no-remote" "-profile" "/tmp/rust_mozprofilexmCHHx"
+1641330658559	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:48607/devtools/browser/4eecbcfe-1c4e-45da-92f1-f37f564a03c8
+1641330659375	Marionette	INFO	Listening on port 34993
+1641330659448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 2652 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://src.ebay-us.com/6UN6hnL6wkGIXFFY?a6fb329c6108ca6a=sp44vv8hREuM9TNsFXrXnLpf-bW8RWE0-qU2IDGW8IKJuLp3l1Yew_gbaJAv9lMAKvhM5RAaA5V6_zuf0y-6BfoTSKYY6krnfdvQiMdeoZJ9Ew1HQanJaz3axF8vVbQDvy8FcQqBJjvmzT7hnVYdAiQn1Zn6QdRBr7Pywf5jlsUVrz41_nzd4nAxtMw2H73EUZNxEDFp_8k&jb=373326266a736f773d4e696e757a2e68716f3d446b6c757824687162753d44697067666f78266a71623f466972676e6d7a2532383b37, line 646: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641330665414	Marionette	INFO	Stopped listening on port 34993
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641330665913	geckodriver	INFO	Listening on 127.0.0.1:57591
+1641330666097	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38715" "-no-remote" "-profile" "/tmp/rust_mozprofileIaHkFX"
+1641330666528	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:38715/devtools/browser/06acf106-c18f-4aab-bafa-d9a493bd8603
+1641330667419	Marionette	INFO	Listening on port 40269
+1641330667508	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641330668681	geckodriver	INFO	Listening on 127.0.0.1:35147
+1641330668862	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36335" "-no-remote" "-profile" "/tmp/rust_mozprofilenuIJBI"
+1641330669335	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:36335/devtools/browser/42344c03-5f08-462b-9d9a-626b369301d2
+1641330670357	Marionette	INFO	Listening on port 40537
+1641330670378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641330681083	Marionette	INFO	Stopped listening on port 40269
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641330682537	Marionette	INFO	Stopped listening on port 40537
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641330979857	geckodriver	INFO	Listening on 127.0.0.1:37947
+1641330980042	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50443" "-no-remote" "-profile" "/tmp/rust_mozprofile7SJSdu"
+1641330980476	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:50443/devtools/browser/80427c3a-db28-44c0-a59a-8bd45d5a16d7
+1641330981316	Marionette	INFO	Listening on port 37193
+1641330981358	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 1203 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641330998461	Marionette	INFO	Stopped listening on port 37193
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1641331069514	geckodriver	INFO	Listening on 127.0.0.1:34151
+1641331069699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40139" "-no-remote" "-profile" "/tmp/rust_mozprofileFoTODR"
+1641331070124	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:40139/devtools/browser/67d69b82-bfa7-46b0-8437-44788c0da67a
+1641331070953	Marionette	INFO	Listening on port 41423
+1641331071024	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_YutWJm0axOJE633NQGMGFEhf2s0.js line 1 > eval line 6951 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileFoTODR/thumbnails) because it does not exist
+1641331100597	Marionette	INFO	Stopped listening on port 41423
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641331101013	geckodriver	INFO	Listening on 127.0.0.1:53459
+1641331101197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47265" "-no-remote" "-profile" "/tmp/rust_mozprofileInRjew"
+1641331101662	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:47265/devtools/browser/081ca978-4386-4528-a3ea-071cb7406617
+1641331102691	Marionette	INFO	Listening on port 39851
+1641331102712	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1641331119317	Marionette	INFO	Stopped listening on port 39851
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

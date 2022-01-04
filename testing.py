@@ -1,4 +1,5 @@
 import os
+import pickle
 import threading
 import shutil as sh
 from time import sleep
@@ -65,6 +66,11 @@ def headlessBrowser():
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
 
+    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookies.pkl"), "rb"))
+
+    for cookie in cookies:
+        browser.add_cookie(cookie)
+
     return browser
 
 
@@ -90,6 +96,10 @@ def captchaBrowser():
     browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_Url)
+
+    pickle.dump(
+        browser.get_cookies(), open(os.path.join(SourceFilesDir, "cookies.pkl"), "wb")
+    )
 
     # Return the browser to use in Threading
     input("Press Enter when Captcha is Completed...")
@@ -242,7 +252,9 @@ def main(gradeList):
     createSourceDir()
 
     # Check for captcha and complete it if required
-    captchaCheck(headlessBrowser())
+    # captchaCheck(headlessBrowser())
+
+    captchaBrowser()
 
     # Get Data
     setup_workers(gradeList)
