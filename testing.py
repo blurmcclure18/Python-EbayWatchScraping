@@ -1,5 +1,4 @@
 import os
-import pickle
 import threading
 import shutil as sh
 from time import sleep
@@ -30,6 +29,8 @@ else:
     pass
 
 # Create funtions to use in program
+
+
 def createSourceDir():
     # Create the folder to store temp html files
     try:
@@ -47,7 +48,7 @@ def headlessBrowser():
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
-    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfileold/")
+    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
 
     # Use Firefox profile
     fp = wd.FirefoxProfile(firefoxProfile)
@@ -59,19 +60,12 @@ def headlessBrowser():
     firefoxOptions = Options()
 
     # Start a headless browser (comment out the below line to view what the browser is doing )
-    # firefoxOptions.headless = True
+    firefoxOptions.headless = True
 
     # Run the browser
     browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(ebay_soldUrl)
-
-    cookies = pickle.load(open(os.path.join(SourceFilesDir, "cookiesNew.pkl"), "rb"))
-
-    for cookie in cookies:
-        browser.add_cookie(cookie)
-
-    browser.refresh()
 
     return browser
 
@@ -86,7 +80,7 @@ def captchaBrowser():
     fp = wd.FirefoxProfile(firefoxProfile)
 
     # Ebay Sold Listings URL
-    ebay_Url = "https://www.ebay.com"
+    ebay_soldUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -97,7 +91,7 @@ def captchaBrowser():
     # Run the browser
     browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
-    browser.get(ebay_Url)
+    browser.get(ebay_soldUrl)
 
     # Return the browser to use in Threading
     input("Press Enter when Captcha is Completed...")
@@ -118,21 +112,26 @@ def perform_actions(watchGrade, browser):
 
     fool()
 
-    search_box.send_keys(watchGrade)
+    gradeString = f"elgin grade {watchGrade}"
+
+    search_box.send_keys(gradeString)
     search_box.send_keys(Keys.RETURN)
 
     # change items per page
-    items_dropdown = browser.find_element_by_xpath(
-        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
-    )
-    items_dropdown.click()
+    try:
+        items_dropdown = browser.find_element_by_xpath(
+            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
+        )
+        items_dropdown.click()
 
-    fool()
+        fool()
 
-    items_200 = browser.find_element_by_xpath(
-        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
-    )
-    items_200.click()
+        items_200 = browser.find_element_by_xpath(
+            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
+        )
+        items_200.click()
+    except:
+        pass
 
     # Get the page source html
     ebay_pagesource = browser.page_source
@@ -176,14 +175,20 @@ def parse_sold(watchGrade):
 
         for item in results:
             try:
-                soldprice = float(
-                    item.find("span", {"class": "s-item__price"})
-                    .text.replace("$", "")
-                    .replace(",", "")
-                    .strip()
-                )
-                gradeSoldPrices.append(soldprice)
+                title = item.find(
+                    "h3", {"class": "s-item__title s-item__title--has-tags"}
+                ).text
 
+                if (("elgin" or "Elgin" or "ELGIN") and watchGrade) in title:
+                    soldprice = float(
+                        item.find("span", {"class": "s-item__price"})
+                        .text.replace("$", "")
+                        .replace(",", "")
+                        .strip()
+                    )
+                    gradeSoldPrices.append(soldprice)
+                else:
+                    print(f"\nNot Adding {title}")
             except:
                 pass
 
@@ -252,8 +257,6 @@ def main(gradeList):
     # Check for captcha and complete it if required
     captchaCheck(headlessBrowser())
 
-    # captchaBrowser()
-
     # Get Data
     setup_workers(gradeList)
 
@@ -265,7 +268,7 @@ def main(gradeList):
 
 
 # Add Keywords for Ebay Search
-watchgradeList = ["291 elgin", "303 elgin"]
+watchgradeList = ["291", "303", "450"]
 
 # Create a counter to increment results dictionary
 resultsCounter = 0

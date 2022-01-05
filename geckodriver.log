@@ -11612,3 +11612,953 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/U_DPXy_vflqTjVU_Yut
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1641408312022	geckodriver	INFO	Listening on 127.0.0.1:39457
+1641408320120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41307" "-no-remote" "-profile" "/tmp/rust_mozprofileUvvIUH"
+*** You are running in headless mode.
+1641408320511	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:41307/devtools/browser/a0e4ebe9-c70f-4737-862d-072c4e751e73
+1641408322057	Marionette	INFO	Listening on port 43447
+1641408322170	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641408326287	Marionette	INFO	Stopped listening on port 43447
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408327581	geckodriver	INFO	Listening on 127.0.0.1:47417
+1641408336098	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "41607" "-no-remote" "-profile" "/tmp/rust_mozprofileyNSoKE"
+*** You are running in headless mode.
+1641408336469	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:41607/devtools/browser/2759f9a6-41b7-487c-99d9-e9df29597f6c
+1641408338071	Marionette	INFO	Listening on port 34669
+1641408338162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408343999	geckodriver	INFO	Listening on 127.0.0.1:58489
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 2483 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+1641408355467	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "56697" "-no-remote" "-profile" "/tmp/rust_mozprofileHl0woE"
+*** You are running in headless mode.
+1641408355956	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:56697/devtools/browser/001a19d0-d5f5-4e62-8a13-89e4095cb675
+1641408358436	Marionette	INFO	Listening on port 40121
+1641408358547	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1641408363350	geckodriver	INFO	Listening on 127.0.0.1:48317
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 420 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641408372797	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "59401" "-no-remote" "-profile" "/tmp/rust_mozprofile946V18"
+*** You are running in headless mode.
+1641408373270	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+DevTools listening on ws://localhost:59401/devtools/browser/268f4906-a7c6-48b9-a1de-0eeae449dd3f
+1641408375312	Marionette	INFO	Listening on port 37205
+1641408375551	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 6815 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+1641408394127	Marionette	INFO	Stopped listening on port 37205
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408399228	Marionette	INFO	Stopped listening on port 34669
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408431314	geckodriver	INFO	Listening on 127.0.0.1:41419
+1641408439664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55483" "-no-remote" "-profile" "/tmp/rust_mozprofiler3bFgE"
+1641408440546	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:55483/devtools/browser/f1f52f12-55a9-4c4e-823b-f03e29ec56d2
+1641408442891	Marionette	INFO	Listening on port 38915
+1641408443059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1641408447269	Marionette	INFO	Stopped listening on port 38915
+JavaScript error: , line 0: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: , line 0: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408448550	geckodriver	INFO	Listening on 127.0.0.1:42743
+1641408457149	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39449" "-no-remote" "-profile" "/tmp/rust_mozprofilegxn0FR"
+1641408458017	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:39449/devtools/browser/f152cb8d-4034-467e-9062-023c75779d24
+1641408460253	Marionette	INFO	Listening on port 40001
+1641408460283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 201 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408472916	Marionette	INFO	Stopped listening on port 40001
+1641408473292	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Can't sync: Network is offline(resource://services-sync/stages/enginesync.js:59:13) JS Stack trace: sync@enginesync.js:59:13
+onNotify@service.js:1351:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4499: TypeError: win is null
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4499: TypeError: win is null
+[Parent 26360, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408474491	geckodriver	INFO	Listening on 127.0.0.1:36937
+1641408483449	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44569" "-no-remote" "-profile" "/tmp/rust_mozprofile8hG152"
+1641408484316	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:44569/devtools/browser/8be21772-1fe6-4adf-b5c5-5c126088bed4
+1641408486640	Marionette	INFO	Listening on port 42417
+1641408486726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/content_script_bundle.js, line 173: TypeError: t.app is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/content_script_bundle.js, line 173: TypeError: t.app is undefined
+1641408491693	geckodriver	INFO	Listening on 127.0.0.1:53093
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 5390 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641408500308	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58863" "-no-remote" "-profile" "/tmp/rust_mozprofileXQ1SZD"
+1641408501206	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:58863/devtools/browser/012130d9-c8e8-4f8e-9793-30376a1dd372
+1641408503693	Marionette	INFO	Listening on port 41027
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+1641408503761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1641408508498	geckodriver	INFO	Listening on 127.0.0.1:34753
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+1641408514040	Marionette	INFO	Stopped listening on port 42417
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 2450 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1641408515916	Marionette	INFO	Stopped listening on port 41027
+JavaScript error: , line 0: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: , line 0: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408518776	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53615" "-no-remote" "-profile" "/tmp/rust_mozprofileeN24zD"
+1641408519623	Marionette	INFO	Marionette enabled
+Exiting due to channel error.
+1641408524844	geckodriver	INFO	Listening on 127.0.0.1:47777
+1641408533041	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47083" "-no-remote" "-profile" "/tmp/rust_mozprofileNRSULg"
+1641408533883	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:47083/devtools/browser/1dd5fc17-77d1-484f-9380-f58b10b5972e
+1641408536093	Marionette	INFO	Listening on port 35907
+1641408536187	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641408541226	Marionette	INFO	Stopped listening on port 35907
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408542679	geckodriver	INFO	Listening on 127.0.0.1:41299
+1641408551318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52491" "-no-remote" "-profile" "/tmp/rust_mozprofilev6m00D"
+1641408552166	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:52491/devtools/browser/4209e123-1059-4a68-895e-2f669325e5b5
+1641408554267	Marionette	INFO	Listening on port 39393
+1641408554361	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 2292: Error: primed listener not re-registered
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641408559430	geckodriver	INFO	Listening on 127.0.0.1:54373
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 708 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408568563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47245" "-no-remote" "-profile" "/tmp/rust_mozprofile3mmULB"
+1641408569466	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:47245/devtools/browser/902fc9d8-656b-4186-8164-54516aa027ee
+1641408571941	Marionette	INFO	Listening on port 40945
+1641408572018	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1641408576913	geckodriver	INFO	Listening on 127.0.0.1:44111
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 6778 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408586382	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54429" "-no-remote" "-profile" "/tmp/rust_mozprofile2ZQJvH"
+1641408587305	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+DevTools listening on ws://localhost:54429/devtools/browser/c61d1d7d-126a-4c23-b535-cfc6780759bb
+1641408589791	Marionette	INFO	Listening on port 40581
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+1641408589944	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+291&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 3823 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+303&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+450&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+1641408610180	Marionette	INFO	Stopped listening on port 40945
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+[Parent 28757, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+291&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+1641408611969	Marionette	INFO	Stopped listening on port 40581
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+1641408615540	Marionette	INFO	Stopped listening on port 39393
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6C0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408682332	geckodriver	INFO	Listening on 127.0.0.1:33301
+1641408690716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "33959" "-no-remote" "-profile" "/tmp/rust_mozprofileKU0Z6F"
+*** You are running in headless mode.
+1641408691113	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:33959/devtools/browser/cb030a40-f62b-48b0-bc53-c240fd6017da
+1641408692780	Marionette	INFO	Listening on port 33741
+1641408692903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641408696842	Marionette	INFO	Stopped listening on port 33741
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1641408698221	geckodriver	INFO	Listening on 127.0.0.1:53147
+1641408706967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47247" "-no-remote" "-profile" "/tmp/rust_mozprofileakNLhu"
+*** You are running in headless mode.
+1641408707355	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:47247/devtools/browser/eec34e22-05dc-463c-bdf6-46c41193af17
+1641408708966	Marionette	INFO	Listening on port 43487
+1641408709043	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+1641408715818	geckodriver	INFO	Listening on 127.0.0.1:40441
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 6016 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408725359	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "47289" "-no-remote" "-profile" "/tmp/rust_mozprofileqf4bNZ"
+*** You are running in headless mode.
+1641408725784	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:47289/devtools/browser/990041f4-4f2f-44a1-abc3-14011447125e
+1641408727662	Marionette	INFO	Listening on port 35113
+1641408727707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/content_script_bundle.js, line 173: TypeError: r.window.document.documentElement is null
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408733147	geckodriver	INFO	Listening on 127.0.0.1:33557
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 3710 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+1641408742347	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "50241" "-no-remote" "-profile" "/tmp/rust_mozprofileaFKnVu"
+*** You are running in headless mode.
+1641408742762	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://localhost:50241/devtools/browser/c7dd3092-4146-4919-8bf3-f142fb4dbce6
+1641408744540	Marionette	INFO	Listening on port 35299
+1641408744684	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript error: https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0, line 1: TypeError: r[1] is undefined
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 1910: TypeError: i.protocol is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+450&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/&followup=https://mail.google.com/mail/u/0/&emr=1 line 1 > eval line 6702 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+291&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2334524.m570.l1313&_nkw=elgin+grade+303&_sacat=0&LH_TitleDesc=0&_odkw=replacethisword&_osacat=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1, line 1: TypeError: r[1] is undefined
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+JavaScript error: moz-extension://ffb3fbb9-8786-4c04-b00c-9482f97299a2/dist/background.js, line 841: Error: Promised response from onMessage listener went out of scope
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+1641408762441	Marionette	INFO	Stopped listening on port 35299
+JavaScript warning: http://democaptcha.com/js/main.js, line 61: unreachable code after return statement
+JavaScript warning: http://democaptcha.com/js/main.js, line 84: unreachable code after return statement
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+303&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+1641408773418	Marionette	INFO	Stopped listening on port 35113
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 30712, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0.2/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+JavaScript error: https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+291&_sacat=0&LH_TitleDesc=0&_sop=12&LH_Complete=1&_sadis=200&LH_Sold=1&_ipg=200, line 1: TypeError: r[1] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Extension error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 73"  data: no] undefined 73
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:73:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:79:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:532:36
+]]
+1641408778090	Marionette	INFO	Stopped listening on port 43487
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39014B,name=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390078,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
