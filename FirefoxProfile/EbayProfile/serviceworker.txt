@@ -1,5 +1,6 @@
 9
 
+<<<<<<< HEAD
 https://www.office.com/
 https://www.office.com/sw?cdnDomain=res-1.cdn.office.net%2Fofficehub&workload=officehome
 true
@@ -20,6 +21,16 @@ true
 1641401135792560
 1641401136175423
 1641401133878049
+=======
+https://mail.google.com/mail/u/0/
+https://mail.google.com/mail/u/0/sw.js?offline_allowed=1
+true
+{4200ee09-5be4-4aea-a174-ee994812cbaf}
+0
+1641332205669928
+1641332205670394
+1641332205633634
+>>>>>>> d5c2f7835e4bf2efa2defecbe2652eba3cefc5fb
 0
 true
 #
