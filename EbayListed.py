@@ -1,15 +1,16 @@
 import os
 import threading
 import shutil as sh
-from time import sleep
+import pprint as pp
 from pathlib import Path
 import concurrent.futures
-from random import randint
 from bs4 import BeautifulSoup
+from setup import watchgradeList
+from watchAvgPrices import avgPrices
 from selenium import webdriver as wd
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 # Get Current Working Directory to use in Functions
 currentDir = os.path.dirname(__file__)
@@ -38,23 +39,14 @@ def createSourceDir():
     except:
         pass
 
-
-def fool():
-    # Using random sleep duration to help fool captcha
-    sleep(randint(1, 10))
-
-
-def headlessBrowser():
+def headlessBrowser(watchGrade):
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
     firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
 
-    # Use Firefox profile
-    fp = wd.FirefoxProfile(firefoxProfile)
-
     # Ebay Sold Listings URL
-    ebay_soldUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
+    ebayUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+{watchGrade}+movement&_sacat=0&rt=nc&LH_BIN=1"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -62,84 +54,42 @@ def headlessBrowser():
     # Start a headless browser (comment out the below line to view what the browser is doing )
     firefoxOptions.headless = True
 
+    # Use Firefox profile
+    firefoxOptions.profile = firefoxProfile
+
     # Run the browser
-    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
+    browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
-    browser.get(ebay_soldUrl)
+    browser.get(ebayUrl)
 
     return browser
-
-
-def captchaBrowser():
-    # Create and launch a FireFox Browser
-
-    # Firefox Proile Location
-    firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
-
-    # Use Firefox profile
-    fp = wd.FirefoxProfile(firefoxProfile)
-
-    # Ebay Sold Listings URL
-    ebay_soldUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
-
-    # Store options to use in Firefox
-    firefoxOptions = Options()
-
-    # Start a headless browser (comment out the below line to view what the browser is doing )
-    firefoxOptions.headless = False
-
-    # Run the browser
-    browser = wd.Firefox(fp, executable_path=geckoPath, options=firefoxOptions)
-    browser.implicitly_wait(10)
-    browser.get(ebay_soldUrl)
-
-    # Return the browser to use in Threading
-    input("Press Enter when Captcha is Completed...")
-
-    browser.quit()
-
-    return
-
 
 def perform_actions(watchGrade, browser):
     # Automate the browser using selenium
 
-    # input ebay Search
-    search_xpath = '//*[@id="gh-ac"]'
-    search_box = browser.find_element_by_xpath(search_xpath)
-    search_box.send_keys(Keys.CONTROL + "a")
-    search_box.send_keys(Keys.DELETE)
-
-    fool()
-
-    gradeString = f"elgin grade {watchGrade}"
-
-    search_box.send_keys(gradeString)
-    search_box.send_keys(Keys.RETURN)
+    browser.implicitly_wait(10)
 
     # change items per page
     try:
-        items_dropdown = browser.find_element_by_xpath(
+        items_dropdown = browser.find_element(By.XPATH, 
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
         )
         items_dropdown.click()
 
-        fool()
-
-        items_200 = browser.find_element_by_xpath(
+        items_200 = browser.find_element(By.XPATH, 
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
         )
         items_200.click()
     except:
         pass
-
+    
     # Get the page source html
     ebay_pagesource = browser.page_source
 
     # Close the browser
     browser.quit()
 
-    # Parse html into Soup with BeautifulSoup
+   # Parse html into Soup with BeautifulSoup
     soup = BeautifulSoup(ebay_pagesource, "html.parser")
 
     # Remove "Related Items" section that would give false info
@@ -151,7 +101,7 @@ def perform_actions(watchGrade, browser):
         writer.write(str(newSoup))
 
 
-def parse_sold(watchGrade):
+def parseListed(watchGrade):
     # Parsing html to get sold prices
 
     # Create lock for threading
@@ -165,51 +115,67 @@ def parse_sold(watchGrade):
     soup = open(SourceFilesDir + "/" + f"{watchGrade}.html")
     newSoup = BeautifulSoup(soup, "html.parser")
 
-    # Get all Sold Listings Data
-    results = newSoup.find_all("div", {"class": "s-item__info clearfix"})
+    # Get all Listings Data
+    results = newSoup.find_all('li',{'class': 's-item s-item__pl-on-bottom s-item--watch-at-corner'})
 
-    # With Threading iterate adding sold prices to list and average them
+    # With Threading iterate adding prices to list and average them
     with lock:
-        # list to store sold prices
-        gradeSoldPrices = []
+        # Get WatchGrade Average Price
+        for n in avgPrices:
+            if avgPrices[n]['grade'] == watchGrade:
+                watchAvg = avgPrices[n]['averagePrice']
+            else:
+                pass
 
         for item in results:
             try:
+
+                image = item.find('img', {'class' : 's-item__image-img'})['src']
+
                 title = item.find(
-                    "h3", {"class": "s-item__title s-item__title--has-tags"}
+                    "h3", {"class": "s-item__title"}
                 ).text
+                
+                buyItNow = item.find('span', {'class': 's-item__purchase-options-with-icon'}).text
+
+                price = float(
+                            item.find("span", {"class": "s-item__price"})
+                            .text.replace("$", "")
+                            .replace(",", "")
+                            .strip()
+                        )
 
                 if (("elgin" or "Elgin" or "ELGIN") and watchGrade) in title:
-                    soldprice = float(
-                        item.find("span", {"class": "s-item__price"})
-                        .text.replace("$", "")
-                        .replace(",", "")
-                        .strip()
-                    )
-                    gradeSoldPrices.append(soldprice)
+                    if price < watchAvg:
+                        product = {
+                            'title': title,
+                            'price': price,
+                            'link': item.find('a', {'class' : 's-item__link'})['href'],
+                            'image': image
+                        }
+                    else:
+                        pass
+
+                    # Add the watch grade and average price to dictionary
+                    watchListed[resultsCounter] = {
+                        "grade": watchGrade,
+                        "watch": product,
+                    }
+                    
+                    # Increase counter for next iteration
+                    resultsCounter += 1
                 else:
-                    print(f"\nNot Adding {title}")
+                    pass
             except:
                 pass
 
-        averagePrice = round(sum(gradeSoldPrices) / len(gradeSoldPrices))
-
-        # Add the watch grade and average price to dictionary
-        watchResults[resultsCounter] = {
-            "grade": watchGrade,
-            "averagePrice": averagePrice,
-        }
-
-        # Increase counter for next iteration
-        resultsCounter += 1
-
-
 def get_handles(watchGrade, browser):
     # Using threading perform these funtions
-
     perform_actions(watchGrade, browser)
 
-    parse_sold(watchGrade)
+    parseListed(watchGrade)
+
+    parseGoodResults(watchGrade)
 
 
 def setup_workers(grade_list):
@@ -222,59 +188,53 @@ def setup_workers(grade_list):
 
     # Add open browsers to list to use
     while len(browsers) < workers:
-        browsers.append(headlessBrowser())
+        for grade in grade_list:
+            browsers.append(headlessBrowser(grade))
         counter += 1
 
     # Using ThreadPool execute our funtions
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         executor.map(get_handles, grade_list, browsers)
 
+def parseGoodResults(watchGrade):
+    global lock
 
-def captchaCheck(browser):
-
-    verifySource = browser.page_source
-
-    browser.quit()
-
-    try:
-        soup = BeautifulSoup(verifySource, "html.parser")
-        verifyText = soup.find("div", {"id": "areaTitle"}).text
-    except:
-        return
-
-    if "verify" in verifyText:
-        captchaBrowser()
-        return
-    else:
-        return
-
+    with lock:
+        counter = 0
+        for entry in watchListed:
+            if watchListed[entry]['grade'] == watchGrade:
+                if watchGrade not in MasterDict:
+                    MasterDict[watchGrade]= {counter: watchListed[entry]['watch']}
+                    counter += 1
+                else:
+                    MasterDict[watchGrade][counter] = watchListed[entry]['watch']
+                    counter += 1
 
 # Create Main Function
 def main(gradeList):
     # Run our Python Program
     createSourceDir()
 
-    # Check for captcha and complete it if required
-    captchaCheck(headlessBrowser())
-
+    # Testing Functions
+    # get_handles("303", headlessBrowser("303"))
+    # parseListed("303")
+    # parseGoodResults("303")
+    
     # Get Data
     setup_workers(gradeList)
 
-    # Print our watch grades with their average prices
-    print(watchResults)
+    print('\n\nPrinting Master Watch List: ')
+    pp.pprint(MasterDict)
 
     # Remove our SourceFiles directory to save space
     sh.rmtree(SourceFilesDir, ignore_errors=True)
-
-
-# Add Keywords for Ebay Search
-watchgradeList = ["291", "303", "450"]
 
 # Create a counter to increment results dictionary
 resultsCounter = 0
 
 # Results dictionary that will hold our watch grade with their average price
-watchResults = {}
+watchListed = {}
+MasterDict = {}
 
 # Call Main Function
 main(watchgradeList)

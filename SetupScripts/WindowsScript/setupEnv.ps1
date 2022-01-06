@@ -1,1 +1,1 @@
-pip install bs4 pandas selenium
+pip install bs4 selenium

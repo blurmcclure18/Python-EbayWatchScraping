@@ -20,4 +20,5 @@ if os.name == "posix":
 else:
     pass
 
-subprocess.call(['python', f"{currentDir}/EbaySold.py"])
+# Add Keywords for Ebay Search
+watchgradeList = ["291", "303", "450",'384', '428']
