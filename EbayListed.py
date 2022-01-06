@@ -1,5 +1,7 @@
 import os
+import json
 import threading
+import collections
 import shutil as sh
 import pprint as pp
 from time import sleep
@@ -60,7 +62,7 @@ def headlessBrowser(watchGrade):
     #fp = wd.FirefoxProfile(firefoxProfile)
 
     # Ebay Sold Listings URL
-    ebayUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+{watchGrade}&_sacat=0&rt=nc&LH_BIN=1"
+    ebayUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+{watchGrade}+movement&_sacat=0&rt=nc&LH_BIN=1"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -115,7 +117,7 @@ def perform_actions(watchGrade, browser):
         writer.write(str(newSoup))
 
 
-def parse_listed(watchGrade):
+def parseListed(watchGrade):
     # Parsing html to get sold prices
 
     # Create lock for threading
@@ -184,7 +186,9 @@ def get_handles(watchGrade, browser):
 
     perform_actions(watchGrade, browser)
 
-    parse_listed(watchGrade)
+    parseListed(watchGrade)
+
+    parseGoodResults(watchGrade)
 
 
 def setup_workers(grade_list):
@@ -205,6 +209,25 @@ def setup_workers(grade_list):
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         executor.map(get_handles, grade_list, browsers)
 
+def parseGoodResults(watchGrade):
+    global masterCounter
+
+    dumpData = json.dumps(watchListed)
+
+    jsonObject = json.loads(dumpData)
+
+    #for n in jsonObject:
+    #    print(jsonObject[n])
+
+    for n in jsonObject:
+        if jsonObject[n]['grade'] == watchGrade:
+            if watchGrade not in MasterDict:
+                MasterDict[watchGrade]= {'watch': jsonObject[n]['watch']}
+            else:
+                MasterDict[watchGrade]['watch'].update(jsonObject[n]['watch'])
+        else:
+            pass
+
 # Create Main Function
 def main(gradeList):
     # Run our Python Program
@@ -212,29 +235,35 @@ def main(gradeList):
 
     # Testing Functions
     # get_handles("303", headlessBrowser("303"))
-    #parse_listed("303")
-
+    parseListed("303")
+    parseGoodResults("303")
+    
     # Get Data
-    setup_workers(gradeList)
+    #setup_workers(gradeList)
 
     # Print our watch grades with their average prices
     numResults = len(watchListed)
     print(f'\nNumber of Listed Entries : {numResults}\n')
+    
+    #print(f"\nPrinting Unfiltered Watch Dict: ")
+    #pp.pprint(watchListed)
 
     print('\n\nPrinting Master Watch List: ')
-    pp.pprint(watchListed)
+    pp.pprint(MasterDict)
 
     # Remove our SourceFiles directory to save space
-    sh.rmtree(SourceFilesDir, ignore_errors=True)
+    #sh.rmtree(SourceFilesDir, ignore_errors=True)
 
 # Add Keywords for Ebay Search
 watchgradeList = ["291", "303", "450"]
 
 # Create a counter to increment results dictionary
 resultsCounter = 0
+masterCounter = 0
 
 # Results dictionary that will hold our watch grade with their average price
-watchListed = {}
+watchListed = collections.defaultdict()
+MasterDict = {}
 
 # Call Main Function
 main(watchgradeList)
