@@ -1,0 +1,287 @@
+[
+  {
+    "name": "ak_bmsc",
+    "value": "269AB014264C4BD8AB7D7B33544DDF9F~000000000000000000000000000000~YAAQJcZMaDq/JyV+AQAAvNy/MA48vZa41g3ISdXx9JgBYMMhjfGS1SSDBRVrkYHK+FgxP6SqizjKAmOttTaeZPmMbp15qpmtI2E4t7sP1M6o058KNClnDmxYaIF9sPfZqez93iGkCP9caja9pn5E8fIf0gd+dLIEIH+4V2yvnHNH1+w2/QC/4gRAde6BNCV2sc6vNs3w7ZaPOJwZf7HgUrm+e5/Qx6S7bUtROxiV/Nb4NR0deoxYZwo7X4cDZf1dzpW84EJD7u9hHq6IMW7W79SsGrlMQyUFZRTCHxVcLmbM97lJbD9zmcNcAt3E8uWKlKkeg7uVKh+Bq77Hm+BkNJUFj+ICVrmMVzQz97pUUMqRLC9PQ10n4PY0ot1fJ4ULKAVPFhkMgA==",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": true,
+    "expiry": 1641502587,
+    "sameSite": "None"
+  },
+  {
+    "name": "cid",
+    "value": "HOTGEmkjW2dIuqRQ%23298562652",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1673031393,
+    "sameSite": "None"
+  },
+  {
+    "name": "__ssuzjsr2",
+    "value": "a9be0cd8e",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmaj2",
+    "value": "9dbf1eeb-4387-4158-b998-04cf69522f02",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmbj2",
+    "value": "1641495391",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmcj2",
+    "value": "183991353257",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmdj2",
+    "value": "1641495394",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "__ssds",
+    "value": "2",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657043794,
+    "sameSite": "None"
+  },
+  {
+    "name": "4a040a5b-d83b-4b43-8bf3-5f736832f800",
+    "value": "CgAPmAClh1zyoNjMuMjQxLjQwLjEyNiw2My4yNDEuNDAuMTI2LDEwNC43Ni4xOTguMzcD5wAKYdc8qDE2NDE0OTU3MjB6Quk6",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": true,
+    "expiry": 1641495720,
+    "sameSite": "None"
+  },
+  {
+    "name": "ds1",
+    "value": "ats/1641495421865",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzma",
+    "value": "8057d0cc-26e8-4297-8a17-d53cf1eb93fd",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmb",
+    "value": "1641495389",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmc",
+    "value": "205701625402",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmd",
+    "value": "1641495420",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzme",
+    "value": "5985",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "__uzmf",
+    "value": "7f3000ec102e46-04a8-4988-a999-f7fd2abd66b6f85fcafb60919a8a16",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1657047420,
+    "sameSite": "None"
+  },
+  {
+    "name": "ds2",
+    "value": "",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "shs",
+    "value": "BAQAAAX4DfICVAAaAAVUAD2O4bv0yMTAyMzc2NzM3MDA1LDKZzYmoH0Egu2VHyI4jayZeOJbJXg**",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": true,
+    "expiry": 1642100222,
+    "sameSite": "None"
+  },
+  {
+    "name": "bm_sv",
+    "value": "B7B240D4B436DFEE7E484BE6A5DDEBE0~k6qE18eXVtNh0VgtK9SxanI6QGTTexE23IVc5zZ3lwBVDm9nhyu5JeZwPHhH+RZotqdVnYp0TBoAViK4kvpznfuaLoWy0xbfAfxRmivORhZ3yTkMJKHji2BN9Q4+TwKgssGGw8os1OF9rSA/AII1+0coFzP7XXbh9MViDnM85gw=",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": true,
+    "expiry": 1641502589,
+    "sameSite": "None"
+  },
+  {
+    "name": "dp1",
+    "value": "bu1p/Ymx1cm1jY2x1cmUxOA**6599a281^kms/in6599a281^pbf/%230000e000c0000000800000000063b86f01^u1f/Alec6599a281^tzo/1a461d74990^expt/000164149542374262c7d53f^bl/US6599a281^",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1704567425,
+    "sameSite": "None"
+  },
+  {
+    "name": "s",
+    "value": "BAQAAAXw0ACieAAWAAAEADWHYjP1ibHVybWNjbHVyZTE4AAMABWHYjQAxNjM4NAAMAAph2I0AMTA1MTM4NzI3MAARABJh10AtMDAwMDBibHVybWNjbHVyZTE4AD0ADWHYjQBibHVybWNjbHVyZTE4AKgAAWHYjP0xAPgAIGHYjQAzMGJmZGM1YTE3ZTBhNjQ2NmUwODQyYTNmZmM2ZmExOQFFAAhjuG8BNWI5YzNjNDkBZQADYdiNACMwMmHMlVqv1AvEnjWtxxep5URHNSy5",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "npii",
+    "value": "btguid/30bfdc5a17e0a6466e0842a3ffc6fa196599a281^cguid/30bfe11617e0a44e6de4bd30fdcee6286599a281^",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1704567425,
+    "sameSite": "None"
+  },
+  {
+    "name": "cpt",
+    "value": "%5Ecpt_guid%3D4a040a5b-d83b-4b43-8bf3-5f736832f800%5Ecpt_prvd%3Dhcaptcha%5E",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1641581825,
+    "sameSite": "None"
+  },
+  {
+    "name": "ns1",
+    "value": "BAQAAAXw0ACieAAaAAKUADWO4bwExMDUxMzg3MjcwLzA7f0mFYyqxUi5V616UE1Cqtoc62Pg*",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": true,
+    "expiry": 1673031425,
+    "sameSite": "None"
+  },
+  {
+    "name": "AMCVS_A71B5B5B54F607AB0A4C98A2%40AdobeOrg",
+    "value": "1",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "nonsession",
+    "value": "BAQAAAXw0ACieAAaAAAQADWO4bv1ibHVybWNjbHVyZTE4ABAADWO4bwFibHVybWNjbHVyZTE4ADMADmO4bwE2MTczMy05NDg4LFVTQQBAAA1juG8BYmx1cm1jY2x1cmUxOACaAA5h2d59Ymx1cm1jY2x1cmUxOGcAnAA4Y7hvAW5ZK3NIWjJQckJtZGo2d1ZuWStzRVoyUHJBMmRqNkFFbFlPaUFKZUFwZ3lkajZ4OW5ZK3NlUT09AJ0ACGO4bwEwMDAwMDAwMADKACBlmaKBMzBiZmRjNWExN2UwYTY0NjZlMDg0MmEzZmZjNmZhMTkAywACYddCiTI1AWQAB2WZooEjMDAwMDhh3J/vSNQDkTtr20gHuAHeKNxaFVw*",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": true,
+    "httpOnly": false,
+    "expiry": 1704567425,
+    "sameSite": "None"
+  },
+  {
+    "name": "ebay",
+    "value": "%5Ejs%3D1%5EsfLMD%3D0%5Esin%3Din%5Esbf%3D%2340000004%5E",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "sameSite": "None"
+  },
+  {
+    "name": "__gads",
+    "value": "ID=8430b40fee0bbf68:T=1641495392:S=ALNI_MZmlqEwyooNw4BC5zTtcKnJof2XJg",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1675191392,
+    "sameSite": "None"
+  },
+  {
+    "name": "AMCV_A71B5B5B54F607AB0A4C98A2%40AdobeOrg",
+    "value": "-408604571%7CMCMID%7C07913822128242013064248893384103038635%7CMCAAMLH-1642100225%7C7%7CMCAAMB-1642100225%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCCIDH%7C-1094905512%7CMCOPTOUT-1641502625s%7CNONE%7CMCSYNCSOP%7C411-19006%7CvVersion%7C4.6.0",
+    "path": "/",
+    "domain": ".ebay.com",
+    "secure": false,
+    "httpOnly": false,
+    "expiry": 1704567428,
+    "sameSite": "None"
+  }
+]
