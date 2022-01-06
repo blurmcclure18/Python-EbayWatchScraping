@@ -7,10 +7,11 @@ from pathlib import Path
 import concurrent.futures
 from random import randint
 from bs4 import BeautifulSoup
-from PythonScripts.setup import watchgradeList
 from selenium import webdriver as wd
 from selenium.webdriver.common.by import By
+from PythonScripts.setup import watchgradeList
 from selenium.webdriver.common.keys import Keys
+from PythonScripts.Settings.headless import headless
 from selenium.webdriver.firefox.options import Options
 
 # Get Current Working Directory to use in Functions
@@ -52,8 +53,11 @@ def headlessBrowser(watchGrade):
     firefoxOptions = Options()
 
     # Start a headless browser (comment out the below line to view what the browser is doing )
-    firefoxOptions.headless = True
-
+    if headless == True:
+        firefoxOptions.headless = True
+    else:
+        firefoxOptions.headless = False
+    
     # Run the browser
     browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
 
@@ -61,7 +65,7 @@ def headlessBrowser(watchGrade):
 
     browser.get(ebayUrl)
 
-    with open(f"{currentDir}/Cookies/cookies.json", 'r') as cookiesfile:
+    with open(f"{currentDir}/Settings/Cookies/cookies.json", 'r') as cookiesfile:
         cookies = json.load(cookiesfile)
     
     for cookie in cookies:

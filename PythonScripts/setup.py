@@ -2,7 +2,7 @@ import os
 import json
 from subprocess import call
 from selenium import webdriver as wd
-from PythonScripts.initialSetup import initialSetup
+from PythonScripts.Settings.initialSetup import initialSetup
 
 # Get Current Working Directory to use in Functions
 currentDir = os.path.dirname(__file__)
@@ -40,7 +40,7 @@ def setupBrowser():
         pass
 
     global cookiePath
-    cookiePath = f"{currentDir}/Cookies/"
+    cookiePath = f"{currentDir}/Settings/Cookies/"
 
 # Browser to login to eBay to collect and write login cookie
 def loginBrowser():
@@ -71,13 +71,14 @@ def main():
         setupPython()
         setupBrowser()
         loginBrowser()
-        initialSetup = True
+        with open(f'{currentDir}/Settings/initialSetup.py', 'w') as writer:
+            writer.write('initialSetup = True')
     else:
         pass
     # Testing Functions
 
 # Add Keywords for Ebay Search in other programs
-watchgradeList = ["67"]#, "95"]
+watchgradeList = ["291"]#, "95"]
 
 # Call Main Function
 main()
