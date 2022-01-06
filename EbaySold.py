@@ -262,9 +262,11 @@ def main(gradeList):
 
     # Print our watch grades with their average prices
     print(watchResults)
+    with open(os.path.join(currentDir, "watchAvgPrices.py"), "w") as writer:
+        writer.write(f"avgPrices = {watchResults}")
 
     # Remove our SourceFiles directory to save space
-    sh.rmtree(SourceFilesDir, ignore_errors=True)
+    #sh.rmtree(SourceFilesDir, ignore_errors=True)
 
 
 # Add Keywords for Ebay Search
