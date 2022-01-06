@@ -1,23 +1,16 @@
 import os
-import json
 import threading
-import collections
 import shutil as sh
 import pprint as pp
-from time import sleep
 from pathlib import Path
 import concurrent.futures
-from random import randint
 from bs4 import BeautifulSoup
+from setup import watchgradeList
 from watchAvgPrices import avgPrices
 from selenium import webdriver as wd
-from selenium.webdriver.common import by
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 # Get Current Working Directory to use in Functions
 currentDir = os.path.dirname(__file__)
@@ -46,20 +39,11 @@ def createSourceDir():
     except:
         pass
 
-
-def fool():
-    # Using random sleep duration to help fool captcha
-    sleep(randint(3, 12))
-
-
 def headlessBrowser(watchGrade):
     # Create and launch a FireFox Browser
 
     # Firefox Proile Location
     firefoxProfile = Path(rf"{currentDir}/FirefoxProfile/EbayProfile/")
-
-    # Use Firefox profile
-    #fp = wd.FirefoxProfile(firefoxProfile)
 
     # Ebay Sold Listings URL
     ebayUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+{watchGrade}+movement&_sacat=0&rt=nc&LH_BIN=1"
@@ -68,7 +52,9 @@ def headlessBrowser(watchGrade):
     firefoxOptions = Options()
 
     # Start a headless browser (comment out the below line to view what the browser is doing )
-    #firefoxOptions.headless = True
+    firefoxOptions.headless = True
+
+    # Use Firefox profile
     firefoxOptions.profile = firefoxProfile
 
     # Run the browser
@@ -89,8 +75,6 @@ def perform_actions(watchGrade, browser):
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
         )
         items_dropdown.click()
-
-        fool()
 
         items_200 = browser.find_element(By.XPATH, 
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
@@ -132,7 +116,7 @@ def parseListed(watchGrade):
     newSoup = BeautifulSoup(soup, "html.parser")
 
     # Get all Listings Data
-    results = newSoup.find_all("div", {"class": "s-item__info clearfix"})
+    results = newSoup.find_all('li',{'class': 's-item s-item__pl-on-bottom s-item--watch-at-corner'})
 
     # With Threading iterate adding prices to list and average them
     with lock:
@@ -145,6 +129,9 @@ def parseListed(watchGrade):
 
         for item in results:
             try:
+
+                image = item.find('img', {'class' : 's-item__image-img'})['src']
+
                 title = item.find(
                     "h3", {"class": "s-item__title"}
                 ).text
@@ -164,6 +151,7 @@ def parseListed(watchGrade):
                             'title': title,
                             'price': price,
                             'link': item.find('a', {'class' : 's-item__link'})['href'],
+                            'image': image
                         }
                     else:
                         pass
@@ -183,7 +171,6 @@ def parseListed(watchGrade):
 
 def get_handles(watchGrade, browser):
     # Using threading perform these funtions
-
     perform_actions(watchGrade, browser)
 
     parseListed(watchGrade)
@@ -210,23 +197,18 @@ def setup_workers(grade_list):
         executor.map(get_handles, grade_list, browsers)
 
 def parseGoodResults(watchGrade):
-    global masterCounter
+    global lock
 
-    dumpData = json.dumps(watchListed)
-
-    jsonObject = json.loads(dumpData)
-
-    #for n in jsonObject:
-    #    print(jsonObject[n])
-
-    for n in jsonObject:
-        if jsonObject[n]['grade'] == watchGrade:
-            if watchGrade not in MasterDict:
-                MasterDict[watchGrade]= {'watch': jsonObject[n]['watch']}
-            else:
-                MasterDict[watchGrade]['watch'].update(jsonObject[n]['watch'])
-        else:
-            pass
+    with lock:
+        counter = 0
+        for entry in watchListed:
+            if watchListed[entry]['grade'] == watchGrade:
+                if watchGrade not in MasterDict:
+                    MasterDict[watchGrade]= {counter: watchListed[entry]['watch']}
+                    counter += 1
+                else:
+                    MasterDict[watchGrade][counter] = watchListed[entry]['watch']
+                    counter += 1
 
 # Create Main Function
 def main(gradeList):
@@ -235,34 +217,23 @@ def main(gradeList):
 
     # Testing Functions
     # get_handles("303", headlessBrowser("303"))
-    parseListed("303")
-    parseGoodResults("303")
+    # parseListed("303")
+    # parseGoodResults("303")
     
     # Get Data
-    #setup_workers(gradeList)
-
-    # Print our watch grades with their average prices
-    numResults = len(watchListed)
-    print(f'\nNumber of Listed Entries : {numResults}\n')
-    
-    #print(f"\nPrinting Unfiltered Watch Dict: ")
-    #pp.pprint(watchListed)
+    setup_workers(gradeList)
 
     print('\n\nPrinting Master Watch List: ')
     pp.pprint(MasterDict)
 
     # Remove our SourceFiles directory to save space
-    #sh.rmtree(SourceFilesDir, ignore_errors=True)
-
-# Add Keywords for Ebay Search
-watchgradeList = ["291", "303", "450"]
+    sh.rmtree(SourceFilesDir, ignore_errors=True)
 
 # Create a counter to increment results dictionary
 resultsCounter = 0
-masterCounter = 0
 
 # Results dictionary that will hold our watch grade with their average price
-watchListed = collections.defaultdict()
+watchListed = {}
 MasterDict = {}
 
 # Call Main Function

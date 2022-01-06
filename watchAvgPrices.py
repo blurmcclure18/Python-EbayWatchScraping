@@ -1,1 +1,1 @@
-avgPrices = {0: {'grade': '450', 'averagePrice': 281}, 1: {'grade': '303', 'averagePrice': 41}, 2: {'grade': '291', 'averagePrice': 46}}
+avgPrices = {0: {'grade': '384', 'averagePrice': 49}, 1: {'grade': '428', 'averagePrice': 686}, 2: {'grade': '291', 'averagePrice': 49}, 3: {'grade': '303', 'averagePrice': 49}, 4: {'grade': '450', 'averagePrice': 281}}
