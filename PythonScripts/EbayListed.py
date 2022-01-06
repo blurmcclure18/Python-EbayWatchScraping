@@ -3,9 +3,12 @@ import json
 import threading
 import shutil as sh
 import pprint as pp
+from time import sleep
 from pathlib import Path
 import concurrent.futures
+from random import randint
 from bs4 import BeautifulSoup
+from selenium.webdriver.firefox.webdriver import WebDriver
 from PythonScripts.setup import watchgradeList
 from PythonScripts.watchAvgPrices import avgPrices
 from selenium import webdriver as wd
@@ -37,6 +40,9 @@ def createSourceDir():
         os.mkdir(f"{currentDir}/TempFiles")
     except:
         pass
+
+def fool():
+    sleep(randint(2,12))
 
 def headlessBrowser(watchGrade):
     # Create and launch a FireFox Browser
@@ -78,6 +84,8 @@ def perform_actions(watchGrade, browser):
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
         )
         items_dropdown.click()
+
+        fool()
 
         items_200 = browser.find_element(By.XPATH, 
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"

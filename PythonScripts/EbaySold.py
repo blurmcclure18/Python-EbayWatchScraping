@@ -31,6 +31,9 @@ else:
 
 # Create funtions to use in program
 
+def foolU():
+    sleep(randint(2,12))
+
 def createSourceDir():
     # Create the folder to store temp html files
     try:
@@ -66,6 +69,8 @@ def headlessBrowser(watchGrade):
     
     browser.refresh()
 
+    foolU()
+
     browser.get(ebaySoldUrl)
 
     return browser
@@ -81,6 +86,8 @@ def perform_actions(watchGrade, browser):
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
         )
         items_dropdown.click()
+
+        foolU()
 
         items_200 = browser.find_element(By.XPATH,
             "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
