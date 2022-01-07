@@ -9,7 +9,8 @@ from random import randint
 from bs4 import BeautifulSoup
 from selenium import webdriver as wd
 from selenium.webdriver.common.by import By
-from PythonScripts.setup import watchgradeList
+from PythonScripts.setup import keywordsList
+from PythonScripts.setup import searchNameList
 from PythonScripts.Settings.headless import headless
 from selenium.webdriver.firefox.options import Options
 
@@ -26,10 +27,7 @@ def createSourceDir():
     except:
         pass
 
-def fool():
-    sleep(randint(1,5))
-
-def testBrowser(watchGrade):
+def testBrowser(searchTerm):
     # Create and launch a FireFox Browser
     if os.name == "nt":
         geckoPath = (
@@ -55,14 +53,15 @@ def testBrowser(watchGrade):
     browser.implicitly_wait(10)
     
     # Set Ebay URL
+    inUrlSearch = searchTerm.replace(' ', '+')
     captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
-    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=elgin+grade+{watchGrade}&_sacat=0"
+    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw={inUrlSearch}&_sacat=0"
     
     browser.get(ebaySoldUrl)
 
     return browser
 
-def ebayBrowser(watchGrade):
+def ebayBrowser(searchTerm):
     # Create and launch a FireFox Browser
     global captchaDetected
 
@@ -93,8 +92,9 @@ def ebayBrowser(watchGrade):
     browser.implicitly_wait(10)
     
     # Set Ebay URL
-    ebayListedUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw=elgin+grade+{watchGrade}+movement&_sacat=0&rt=nc&LH_BIN=1"
-    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=elgin+grade+{watchGrade}&_sacat=0"
+    inUrlSearch = searchTerm.replace(' ', '+')
+    ebayListedUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw={inUrlSearch}&_sacat=0&rt=nc&LH_BIN=1"
+    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw={inUrlSearch}&_sacat=0"
     
     browser.get(ebayListedUrl)
 
@@ -132,7 +132,7 @@ def ebayBrowser(watchGrade):
     listedSoup = BeautifulSoup(ebayListed, "html.parser")
 
     # Write the Beautified Soup to html file for parsing
-    with open(f"{currentDir}/TempFiles/{watchGrade}Listed.html","w") as writer:
+    with open(f"{currentDir}/TempFiles/{searchTerm}Listed.html","w") as writer:
         writer.write(str(listedSoup))
 
     browser.get(ebaySoldUrl)
@@ -160,14 +160,14 @@ def ebayBrowser(watchGrade):
     soldSoup = BeautifulSoup(ebaySold, "html.parser")
 
     # Write the Beautified Soup to html file for parsing
-    with open(f"{currentDir}/TempFiles/{watchGrade}Sold.html","w") as writer:
+    with open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","w") as writer:
         writer.write(str(soldSoup))
     
     browser.quit()
 
     return
 
-def captchaBrowser(watchGrade):
+def captchaBrowser():
     # Create and launch a FireFox Browser
     print('\nRunning Captcha Capable Browser...')
     if os.name == "nt":
@@ -184,8 +184,6 @@ def captchaBrowser(watchGrade):
 
     # Ebay Sold Listings URL
     captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
-
-    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=elgin+grade+{watchGrade}&_sacat=0"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -231,7 +229,7 @@ def captchaCheck(browser):
     except:
         pass
 
-def parseData(watchGrade):
+def parseData(searchTerm,searchName):
     # Parse Data based on Sold or Listed Status
     
     # Create lock for threading
@@ -239,7 +237,7 @@ def parseData(watchGrade):
 
     with lock:
         # Import and rebeautify it
-        soldSoup = open(f"{currentDir}/TempFiles/{watchGrade}Sold.html","r")
+        soldSoup = open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","r")
         newSoldSoup = BeautifulSoup(soldSoup, "html.parser")
 
         # Get all Sold Listings Data
@@ -254,7 +252,7 @@ def parseData(watchGrade):
                     "h3", {"class": "s-item__title s-item__title--has-tags"}
                 ).text
 
-                if (("elgin" or "Elgin" or "ELGIN") and watchGrade) in title:
+                if searchTerm.lower() in title.lower():
                     soldprice = float(
                         item.find("span", {"class": "s-item__price"})
                         .text.replace("$", "")
@@ -270,34 +268,32 @@ def parseData(watchGrade):
         averagePrice = round(sum(gradeSoldPrices) / len(gradeSoldPrices))
 
         # Results dictionary that will hold our watch grade with their average price
-        watchResults = {}
+        searchResults = {}
         soldCounter = 0
 
         # Add the watch grade and average price to dictionary
-        watchResults[soldCounter] = {
-            "grade": watchGrade,
+        searchResults[soldCounter] = {
+            "item": searchName,
             "averagePrice": averagePrice,
         }
 
         # Increase counter for next iteration
         soldCounter += 1
 
-        avgPrices = watchResults
-
         # Results dictionary that will hold our watches
-        watchListed = {}
+        searchListed = {}
         
         # Import and rebeautify it
-        listedSoup = open(f"{currentDir}/TempFiles/{watchGrade}Listed.html","r")
+        listedSoup = open(f"{currentDir}/TempFiles/{searchTerm}Listed.html","r")
         newListedSoup = BeautifulSoup(listedSoup, "html.parser")
         
         # Get all Listings Data
         listedResults = newListedSoup.find_all('li',{'class': 's-item s-item__pl-on-bottom s-item--watch-at-corner'})
         
         # Get WatchGrade Average Price
-        for n in avgPrices:
-            if avgPrices[n]['grade'] == watchGrade:
-                watchAvg = avgPrices[n]['averagePrice']
+        for n in searchResults:
+            if searchResults[n]['item'] == searchName:
+                itemAvg = searchResults[n]['averagePrice']
             else:
                 pass
         
@@ -315,8 +311,8 @@ def parseData(watchGrade):
                             .strip()
                         )
 
-                if (("elgin" or "Elgin" or "ELGIN") and watchGrade) in title:
-                    if price < watchAvg:
+                if searchTerm.lower() in title.lower():
+                    if price < itemAvg:
                         product = {
                             'title': title,
                             'price': price,
@@ -327,9 +323,9 @@ def parseData(watchGrade):
                         pass
 
                     # Add the watch grade and average price to dictionary
-                    watchListed[listedCounter] = {
-                        "grade": watchGrade,
-                        "watch": product,
+                    searchListed[listedCounter] = {
+                        "search": searchName,
+                        "item": product,
                     }
 
                     # Increase counter for next iteration
@@ -341,27 +337,27 @@ def parseData(watchGrade):
         
         # Parse Good Results
         counter = 0
-        for entry in watchListed:
-            if watchListed[entry]['grade'] == watchGrade:
-                if watchGrade not in MasterDict:
-                    MasterDict[watchGrade]= {counter: watchListed[entry]['watch']}
+        for entry in searchListed:
+            if searchListed[entry]['search'] == searchName:
+                if searchName not in MasterDict:
+                    MasterDict[searchName]= {counter: searchListed[entry]['item']}
                     counter += 1
                 else:
-                    MasterDict[watchGrade][counter] = watchListed[entry]['watch']
+                    MasterDict[searchName][counter] = searchListed[entry]['item']
                     counter += 1
             else:
                 pass
     return
 
-def getHandles(watchGrade):
+def getHandles(searchTerm, searchName):
     # Using threading perform these functions
-    ebayBrowser(watchGrade)
-    parseData(watchGrade)
+    ebayBrowser(searchTerm)
+    parseData(searchTerm,searchName)
 
-def setupWorkers(grade_list):
+def setupWorkers(searchTermList,nameList):
     # create workers and list to perform threading
     print('\nStarting Workers...')
-    workers = len(grade_list)
+    workers = len(searchTermList)
     
     #browsers = []
     # Add open browsers to list to use
@@ -370,20 +366,20 @@ def setupWorkers(grade_list):
     #        browsers.append(ebayBrowser(grade))
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-        executor.map(getHandles, grade_list)
+        executor.map(getHandles, searchTermList, nameList)
 
 # Create Main Function
-def newMain(gradeList):
+def newMain(searchTermList, nameList):
     #Run our Program
     createSourceDir()
 
     # Testing Functions
 
     # Perform a Captcha Check before launching Threaded Browsers
-    #captchaCheck(testBrowser(gradeList[0]))
+    captchaCheck(testBrowser(searchTermList[0]))
 
     #Get Data
-    setupWorkers(gradeList)
+    setupWorkers(searchTermList, nameList)
 
     # Remove our TempFiles directory to save space
     sh.rmtree(TempFilesDir, ignore_errors=True)
@@ -392,10 +388,10 @@ MasterDict = {}
 captchaDetected = True
 
 # Call Main Function
-newMain(watchgradeList)
+newMain(keywordsList, searchNameList)
 
 # Print Final Results
-print('\n\nPrinting Master Watch List: ')
+print('\n\nPrinting Master List: ')
 pp.pprint(MasterDict)
 
 with open(f'{currentDir}/MasterDict.py','w') as writer:

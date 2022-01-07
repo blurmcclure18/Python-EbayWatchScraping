@@ -1,6 +1,7 @@
 import os
 import json
 from subprocess import call
+from typing import Counter
 from selenium import webdriver as wd
 from selenium.webdriver.firefox.options import Options
 from PythonScripts.Settings.initialSetup import initialSetup
@@ -81,7 +82,28 @@ def main():
         pass
 
 # Add Keywords for Ebay Search in other programs
-watchgradeList = ["95", "291", "303"]
+multiSearch = False
+userResponeMultiSearch = input('\nWould you like to search for multiple items?:\n')
+if userResponeMultiSearch.lower() == 'yes' or 'y':
+    multiSearch = True
+else:
+    pass
+
+searchNameList = []
+keywordsList = []
+
+if multiSearch == True:
+    userDoneFinal = ['',]
+    whileCounter = 0
+    print(userDoneFinal[whileCounter])
+    while userDoneFinal[whileCounter] != 'no':
+        searchNameList.append(input('\nCreate a Name for your Search:\n'))
+        keywordsList.append(input('\nPlease enter your search term:\n'))
+        userDoneFinal.append(input('\nWould you like to add another search?:\n').lower())
+        whileCounter += 1
+else:
+    searchNameList.append(input('\nCreate a Name for your Search:\n'))
+    keywordsList.append(input('\nPlease enter your search term:\n'))
 
 # Call Main Function
 main()
