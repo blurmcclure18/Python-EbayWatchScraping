@@ -340,3 +340,6 @@ newMain(watchgradeList)
 # Print Final Results
 print('\n\nPrinting Master Watch List: ')
 pp.pprint(MasterDict)
+
+with open(f'{currentDir}/MasterDict.py','w') as writer:
+    writer.write(f'MasterDict = {MasterDict}')

@@ -1,1 +1,1 @@
-headless = False
+headless = True
