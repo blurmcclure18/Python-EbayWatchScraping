@@ -29,8 +29,43 @@ def createSourceDir():
 def fool():
     sleep(randint(1,5))
 
+def testBrowser(watchGrade):
+    # Create and launch a FireFox Browser
+    if os.name == "nt":
+        geckoPath = (
+            f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
+        )
+    else:
+        pass
+
+    if os.name == "posix":
+        geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
+    else:
+        pass
+
+    # Store options to use in Firefox
+    firefoxOptions = Options()
+
+    # Start a headless browser (comment out the below line to view what the browser is doing )
+    firefoxOptions.headless = True # False for Testing
+    
+    # Run the browser
+    browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
+
+    browser.implicitly_wait(10)
+    
+    # Set Ebay URL
+    captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
+    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=elgin+grade+{watchGrade}&_sacat=0"
+    
+    browser.get(ebaySoldUrl)
+
+    return browser
+
 def ebayBrowser(watchGrade):
     # Create and launch a FireFox Browser
+    global captchaDetected
+
     if os.name == "nt":
         geckoPath = (
             f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
@@ -63,11 +98,16 @@ def ebayBrowser(watchGrade):
     
     browser.get(ebayListedUrl)
 
-    with open(f"{currentDir}/Settings/Cookies/cookies.json", 'r') as cookiesfile:
-        cookies = json.load(cookiesfile)
+    if captchaDetected == True:
+        with open(f"{currentDir}/Settings/Cookies/captchaCookies.json", 'r') as cookiesfile:
+            cookies = json.load(cookiesfile)
     
-    for cookie in cookies:
-        browser.add_cookie(cookie)
+        for cookie in cookies:
+            browser.add_cookie(cookie)
+        
+        browser.refresh()
+    else:
+        pass
 
     try:
         items_dropdown = browser.find_element(By.XPATH,
@@ -96,19 +136,6 @@ def ebayBrowser(watchGrade):
         writer.write(str(listedSoup))
 
     browser.get(ebaySoldUrl)
-
-    verifySource = browser.page_source
-
-    try:
-        soup = BeautifulSoup(verifySource, "html.parser")
-        verifyText = soup.find("div", {"id": "areaTitle"}).text
-        if "verify" in verifyText:
-            captchaBrowser()
-            pass
-        else:
-            pass
-    except:
-        pass
 
     browser.implicitly_wait(5)
     
@@ -140,7 +167,7 @@ def ebayBrowser(watchGrade):
 
     return
 
-def captchaBrowser():
+def captchaBrowser(watchGrade):
     # Create and launch a FireFox Browser
     print('\nRunning Captcha Capable Browser...')
     if os.name == "nt":
@@ -156,25 +183,53 @@ def captchaBrowser():
         pass
 
     # Ebay Sold Listings URL
-    captchaUrl = "https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethisword&_sacat=0"
+    captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
+
+    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=elgin+grade+{watchGrade}&_sacat=0"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
 
-    # Start a headless browser (comment out the below line to view what the browser is doing )
-    firefoxOptions.headless = False
+    # Start a browser
+    firefoxOptions.headless = False # False to allow user to complete captcha
 
     # Run the browser
     browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
     browser.implicitly_wait(10)
     browser.get(captchaUrl)
 
-    # Return the browser to use in Threading
     input("Press Enter when Captcha is Completed...")
 
+    browser.implicitly_wait(10)
+
+    with open(f'{currentDir}/Settings/Cookies/captchaCookies.json', 'w') as filehandler:
+        json.dump(browser.get_cookies(), filehandler)
+            
     browser.quit()
 
-    return
+    return browser
+
+def captchaCheck(browser):
+    # Run a captcha check and launch a non-headless browser to complete it.
+    global captchaDetected
+   
+    verifySource = browser.page_source
+    browser.quit()
+
+    print('\nRunning Captcha Check...')
+
+    try:
+        soup = BeautifulSoup(verifySource, "html.parser")
+        verifyText = soup.find("div", {"id": "areaTitle"}).text
+        
+        if "verify" in verifyText:
+            print('\nCaptcha Detected Starting Captcha Capable Browser...')
+            captchaDetected = True
+            captchaBrowser()
+        else:
+            print('\nNo Captcha Detected...')
+    except:
+        pass
 
 def parseData(watchGrade):
     # Parse Data based on Sold or Listed Status
@@ -322,17 +377,19 @@ def newMain(gradeList):
     #Run our Program
     createSourceDir()
 
-    # Testing Sold Functions
-    #getHandles('291',ebayBrowser('291')
-    #parseData('291')
+    # Testing Functions
 
-    #Get Sold Data
+    # Perform a Captcha Check before launching Threaded Browsers
+    #captchaCheck(testBrowser(gradeList[0]))
+
+    #Get Data
     setupWorkers(gradeList)
 
     # Remove our TempFiles directory to save space
     sh.rmtree(TempFilesDir, ignore_errors=True)
 
 MasterDict = {}
+captchaDetected = True
 
 # Call Main Function
 newMain(watchgradeList)
