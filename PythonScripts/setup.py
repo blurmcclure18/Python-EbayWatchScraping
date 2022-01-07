@@ -27,9 +27,9 @@ def setupPython():
         pass
 
 # Browser to login to eBay to collect and write login cookie
-def captchaBrowser():
+def loginBrowser():
     # Create and launch a FireFox Browser
-    print('\nRunning Captcha Capable Browser...')
+    print('\nPlease login to Ebay...\n')
     if os.name == "nt":
         geckoPath = (
             f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
@@ -43,7 +43,7 @@ def captchaBrowser():
         pass
 
     # Ebay Captcha URL
-    captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
+    captchaUrl = f"https://www.ebay.com/"
 
     # Store options to use in Firefox
     firefoxOptions = Options()
@@ -56,11 +56,11 @@ def captchaBrowser():
     browser.implicitly_wait(10)
     browser.get(captchaUrl)
 
-    input("Press Enter when Captcha is Completed...")
+    input("Press Enter when Login is Completed...")
 
     browser.implicitly_wait(10)
 
-    with open(f'{currentDir}/Settings/Cookies/captchaCookies.json', 'w') as filehandler:
+    with open(f'{currentDir}/Settings/Cookies/loginCookies.json', 'w') as filehandler:
         json.dump(browser.get_cookies(), filehandler)
             
     browser.quit()
@@ -74,25 +74,18 @@ def main():
     # Run our Python Program
     if initialSetup != True:
         setupPython()
-        captchaBrowser()
+        loginBrowser()
 
         with open(f'{currentDir}/Settings/initialSetup.py', 'w') as writer:
             writer.write('initialSetup = True')
     else:
         pass
+    
+    getUserSearch()
 
 # Add Keywords for Ebay Search in other programs
-multiSearch = False
-userResponeMultiSearch = input('\nWould you like to search for multiple items?:\n')
-if userResponeMultiSearch.lower() == 'yes' or 'y':
-    multiSearch = True
-else:
-    pass
+def getUserSearch():
 
-searchNameList = []
-keywordsList = []
-
-if multiSearch == True:
     userDoneFinal = ['',]
     whileCounter = 0
     print(userDoneFinal[whileCounter])
@@ -101,9 +94,10 @@ if multiSearch == True:
         keywordsList.append(input('\nPlease enter your search term:\n'))
         userDoneFinal.append(input('\nWould you like to add another search?:\n').lower())
         whileCounter += 1
-else:
-    searchNameList.append(input('\nCreate a Name for your Search:\n'))
-    keywordsList.append(input('\nPlease enter your search term:\n'))
+
+
+searchNameList = []
+keywordsList = []
 
 # Call Main Function
 main()

@@ -1,5 +1,6 @@
 import os
 import json
+import requests
 import threading
 import shutil as sh
 import pprint as pp
@@ -27,44 +28,19 @@ def createSourceDir():
     except:
         pass
 
-def testBrowser(searchTerm):
-    # Create and launch a FireFox Browser
-    if os.name == "nt":
-        geckoPath = (
-            f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
-        )
-    else:
-        pass
+def testingBrowser():
+    pass
 
-    if os.name == "posix":
-        geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
-    else:
-        pass
-
-    # Store options to use in Firefox
-    firefoxOptions = Options()
-
-    # Start a headless browser (comment out the below line to view what the browser is doing )
-    firefoxOptions.headless = True # False for Testing
-    
-    # Run the browser
-    browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
-
-    browser.implicitly_wait(10)
-    
+def listedRequests(searchTerm, avgPrice):
     # Set Ebay URL
     inUrlSearch = searchTerm.replace(' ', '+')
-    captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
-    ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw={inUrlSearch}&_sacat=0"
-    
-    browser.get(ebaySoldUrl)
+    ebayListedUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw={inUrlSearch}&_sacat=0&_udhi={avgPrice}&rt=nc&LH_BIN=1"
+    listedPageSource = requests.get(ebayListedUrl).text
 
-    return browser
+    return listedPageSource
 
 def ebayBrowser(searchTerm):
-    # Create and launch a FireFox Browser
-    global captchaDetected
-
+   # Create and launch a FireFox Browser
     if os.name == "nt":
         geckoPath = (
             f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
@@ -93,66 +69,63 @@ def ebayBrowser(searchTerm):
     
     # Set Ebay URL
     inUrlSearch = searchTerm.replace(' ', '+')
-    ebayListedUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw={inUrlSearch}&_sacat=0&rt=nc&LH_BIN=1"
+    ebayUrl = 'https://ebay.com'
     ebaySoldUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw={inUrlSearch}&_sacat=0"
-    
-    browser.get(ebayListedUrl)
 
-    if captchaDetected == True:
-        with open(f"{currentDir}/Settings/Cookies/captchaCookies.json", 'r') as cookiesfile:
-            cookies = json.load(cookiesfile)
-    
-        for cookie in cookies:
-            browser.add_cookie(cookie)
-        
-        browser.refresh()
-    else:
-        pass
+    browser.get(ebayUrl)
 
-    try:
-        items_dropdown = browser.find_element(By.XPATH,
-            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
-        )
-        items_dropdown.click()
-
-        browser.implicitly_wait(5)
-
-        items_200 = browser.find_element(By.XPATH,
-            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
-        )
-        items_200.click()
-    except:
-        pass
-
-    # Get the page source html
     browser.implicitly_wait(5)
-    ebayListed = browser.page_source
-
-    # Parse html into Soup with BeautifulSoup
-    listedSoup = BeautifulSoup(ebayListed, "html.parser")
-
-    # Write the Beautified Soup to html file for parsing
-    with open(f"{currentDir}/TempFiles/{searchTerm}Listed.html","w") as writer:
-        writer.write(str(listedSoup))
+     
+    with open(f"{currentDir}/Settings/Cookies/loginCookies.json", 'r') as cookiesfile:
+        cookies = json.load(cookiesfile)
+    
+    for cookie in cookies:
+        browser.add_cookie(cookie)
+    
+    browser.refresh()
 
     browser.get(ebaySoldUrl)
 
     browser.implicitly_wait(5)
-    
-    try:
-        items_dropdown = browser.find_element(By.XPATH,
-            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
-        )
-        items_dropdown.click()
-        
-        browser.implicitly_wait(5)
 
-        items_200 = browser.find_element(By.XPATH,
-            "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
-        )
-        items_200.click()
+    verifySource = browser.page_source
+    
+    print('\nRunning Captcha Check...')
+
+    captchaDetected = False
+    try:
+        soup = BeautifulSoup(verifySource, "html.parser")
+        verifyText = soup.find("div", {"id": "areaTitle"}).text
+        
+        if "verify" in verifyText:
+            print('\nCaptcha Detected...')
+            captchaDetected = True
+        else:
+            print('\nNo Captcha Detected...')
     except:
         pass
+    
+    if captchaDetected == True:
+        input('\nPress Enter After Completing Captcha')
+    else:
+        pass
+    
+    #try:
+    #    items_dropdown = browser.find_element(By.XPATH,
+    #        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
+    #    )
+    #    items_dropdown.click()
+
+    #    sleep(randint(2,5))
+    #    
+    #    browser.implicitly_wait(5)
+
+    #    items_200 = browser.find_element(By.XPATH,
+    #        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/span/ul/li[3]/a/span"
+    #    )
+    #    items_200.click()
+    #except:
+    #    pass
 
     ebaySold = browser.page_source
 
@@ -167,76 +140,16 @@ def ebayBrowser(searchTerm):
 
     return
 
-def captchaBrowser():
-    # Create and launch a FireFox Browser
-    print('\nRunning Captcha Capable Browser...')
-    if os.name == "nt":
-        geckoPath = (
-            f"{currentDir}/SetupScripts/WindowsScript/WinGeckoWebDriver/geckodriver.exe"
-        )
-    else:
-        pass
-
-    if os.name == "posix":
-        geckoPath = f"{currentDir}/SetupScripts/BashScript/LinuxGeckoWebDriver/geckodriver"
-    else:
-        pass
-
-    # Ebay Sold Listings URL
-    captchaUrl = f"https://www.ebay.com/sch/i.html?_odkw=&_ipg=25&_sadis=200&_adv=1&_sop=12&LH_SALE_CURRENCY=0&LH_Sold=1&_osacat=0&_from=R40&_dmd=1&LH_Complete=1&_trksid=m570.l1313&_nkw=replacethistext&_sacat=0"
-
-    # Store options to use in Firefox
-    firefoxOptions = Options()
-
-    # Start a browser
-    firefoxOptions.headless = False # False to allow user to complete captcha
-
-    # Run the browser
-    browser = wd.Firefox(executable_path=geckoPath, options=firefoxOptions)
-    browser.implicitly_wait(10)
-    browser.get(captchaUrl)
-
-    input("Press Enter when Captcha is Completed...")
-
-    browser.implicitly_wait(10)
-
-    with open(f'{currentDir}/Settings/Cookies/captchaCookies.json', 'w') as filehandler:
-        json.dump(browser.get_cookies(), filehandler)
-            
-    browser.quit()
-
-    return browser
-
-def captchaCheck(browser):
-    # Run a captcha check and launch a non-headless browser to complete it.
-    global captchaDetected
-   
-    verifySource = browser.page_source
-    browser.quit()
-
-    print('\nRunning Captcha Check...')
-
-    try:
-        soup = BeautifulSoup(verifySource, "html.parser")
-        verifyText = soup.find("div", {"id": "areaTitle"}).text
-        
-        if "verify" in verifyText:
-            print('\nCaptcha Detected Starting Captcha Capable Browser...')
-            captchaDetected = True
-            captchaBrowser()
-        else:
-            print('\nNo Captcha Detected...')
-    except:
-        pass
-
 def parseData(searchTerm,searchName):
     # Parse Data based on Sold or Listed Status
+    print('\nParsing Data...')
     
     # Create lock for threading
     lock = threading.Lock()
 
     with lock:
         # Import and rebeautify it
+        print("\nImporting Sold Data...")
         soldSoup = open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","r")
         newSoldSoup = BeautifulSoup(soldSoup, "html.parser")
 
@@ -244,34 +157,55 @@ def parseData(searchTerm,searchName):
         soldResults = newSoldSoup.find_all("div", {"class": "s-item__info clearfix"})
         
         # list to store sold prices
-        gradeSoldPrices = []
+        itemSoldPrices = []
+
+        print('\nStarting Average Price Loop...')
+
+        # Results dictionary that will hold our item with it's average price
+        searchResults = {}
+        soldCounter = 0
 
         for item in soldResults:
             try:
                 title = item.find(
                     "h3", {"class": "s-item__title s-item__title--has-tags"}
                 ).text
+                
+                lowerSoldTitle = title.lower().split(' ')
 
-                if searchTerm.lower() in title.lower():
+                lowerSoldSearch = searchTerm.lower().split(' ')
+
+                lowerSoldSearchResults = []
+
+                for word in lowerSoldTitle:
+                    for term in lowerSoldSearch:
+                        if term == word:
+                            if word not in lowerSoldSearchResults:
+                                lowerSoldSearchResults.append(word)
+                        else:
+                            pass
+
+                if len(lowerSoldSearchResults) == len(lowerSoldSearch):
                     soldprice = float(
                         item.find("span", {"class": "s-item__price"})
-                        .text.replace("$", "")
-                        .replace(",", "")
-                        .strip()
+                       .text.replace("$", "")
+                       .replace(",", "")
+                       .strip()
                     )
-                    gradeSoldPrices.append(soldprice)
+                    itemSoldPrices.append(soldprice)
                 else:
                     pass
             except:
                 pass
-            
-        averagePrice = round(sum(gradeSoldPrices) / len(gradeSoldPrices))
+        
+        if len(itemSoldPrices) > 0:
+            averagePrice = round(sum(itemSoldPrices) / len(itemSoldPrices))
+            print(f'\nAverage Price: {averagePrice}')
+        else:
+            print('\nNo Sold Items Found...')
+            return
 
-        # Results dictionary that will hold our watch grade with their average price
-        searchResults = {}
-        soldCounter = 0
-
-        # Add the watch grade and average price to dictionary
+        # Add the item and average price to dictionary
         searchResults[soldCounter] = {
             "item": searchName,
             "averagePrice": averagePrice,
@@ -280,24 +214,27 @@ def parseData(searchTerm,searchName):
         # Increase counter for next iteration
         soldCounter += 1
 
-        # Results dictionary that will hold our watches
+        # Results dictionary that will hold our Listed Items
         searchListed = {}
-        
+
+        # Get the Item Average Price
+        print('\nFinding Average Price...')
+        for n in searchResults:
+            if searchResults[n]['item'] == searchName:
+                itemAvg = searchResults[n]['averagePrice']
+            else:
+                print(f"\nCannot Find Average Price for search {searchResults[n]['item']}")
+    
+        print('\nGetting Current Listings...')
         # Import and rebeautify it
-        listedSoup = open(f"{currentDir}/TempFiles/{searchTerm}Listed.html","r")
+        listedSoup = listedRequests(searchTerm, itemAvg)
         newListedSoup = BeautifulSoup(listedSoup, "html.parser")
         
         # Get all Listings Data
         listedResults = newListedSoup.find_all('li',{'class': 's-item s-item__pl-on-bottom s-item--watch-at-corner'})
         
-        # Get WatchGrade Average Price
-        for n in searchResults:
-            if searchResults[n]['item'] == searchName:
-                itemAvg = searchResults[n]['averagePrice']
-            else:
-                pass
-        
         listedCounter = 0
+
         for item in listedResults:
             try:
                 image = item.find('img', {'class' : 's-item__image-img'})['src']
@@ -310,8 +247,21 @@ def parseData(searchTerm,searchName):
                             .replace(",", "")
                             .strip()
                         )
+                
+                lowerListedTitle = title.lower().split(' ')
+                lowerListedSearch = searchTerm.lower().split(' ')
 
-                if searchTerm.lower() in title.lower():
+                lowerListedSearchResults = []
+
+                for word in lowerListedTitle:
+                    for term in lowerListedSearch:
+                        if term == word:
+                            if word not in lowerListedSearchResults:
+                                lowerListedSearchResults.append(word)
+                        else:
+                            pass
+
+                if len(lowerListedSearchResults) == len(lowerListedSearch):
                     if price < itemAvg:
                         product = {
                             'title': title,
@@ -347,10 +297,12 @@ def parseData(searchTerm,searchName):
                     counter += 1
             else:
                 pass
+    print('\nData Parsed...')
     return
 
 def getHandles(searchTerm, searchName):
     # Using threading perform these functions
+    print('\nGetting Handles...')
     ebayBrowser(searchTerm)
     parseData(searchTerm,searchName)
 
@@ -358,12 +310,6 @@ def setupWorkers(searchTermList,nameList):
     # create workers and list to perform threading
     print('\nStarting Workers...')
     workers = len(searchTermList)
-    
-    #browsers = []
-    # Add open browsers to list to use
-    #while len(browsers) < workers:
-    #    for grade in grade_list:
-    #        browsers.append(ebayBrowser(grade))
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
         executor.map(getHandles, searchTermList, nameList)
@@ -374,9 +320,9 @@ def newMain(searchTermList, nameList):
     createSourceDir()
 
     # Testing Functions
-
+    
     # Perform a Captcha Check before launching Threaded Browsers
-    captchaCheck(testBrowser(searchTermList[0]))
+    #captchaCheck(testBrowser(searchTermList[0]))
 
     #Get Data
     setupWorkers(searchTermList, nameList)
@@ -385,14 +331,16 @@ def newMain(searchTermList, nameList):
     sh.rmtree(TempFilesDir, ignore_errors=True)
 
 MasterDict = {}
-captchaDetected = True
 
 # Call Main Function
 newMain(keywordsList, searchNameList)
 
-# Print Final Results
-print('\n\nPrinting Master List: ')
-pp.pprint(MasterDict)
+if len(MasterDict) > 0:
+    # Print Final Results
+    print('\n\nPrinting Master List: ')
+    pp.pprint(MasterDict)
+else:
+    print("\nCouldn't find any items that matched your search critera try refining your search.")
 
 with open(f'{currentDir}/MasterDict.py','w') as writer:
     writer.write(f'MasterDict = {MasterDict}')
