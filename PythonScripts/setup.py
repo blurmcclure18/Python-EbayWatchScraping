@@ -78,7 +78,7 @@ def main():
     # Testing Functions
 
 # Add Keywords for Ebay Search in other programs
-watchgradeList = ["291"]#, "95"]
+watchgradeList = ["291", "95", "303"]
 
 # Call Main Function
 main()
