@@ -9,6 +9,7 @@ from selenium import webdriver as wd
 from Settings.api_key import api_key
 from Settings.headless import headless
 from selenium.webdriver.common.by import By
+from twocaptcha import TwoCaptcha, solver
 from selenium.webdriver.firefox.options import Options
 
 
@@ -135,42 +136,17 @@ def ebayBrowser(searchTerm):
         pass
 
     if captchaDetected == True:
-        print('\nTrying to Resolve Captcha...')
+        print('\nResolving Captcha')
+        solver = TwoCaptcha(api_key)
         siteKey = soup.find('input')['value']
-
         site = soup.find('div', {'class', 'grid-cntr'}).findAll('input', {'name':'ru'})
         siteValStr = str(site[0]).split(" ")[-1]
         link = str(siteValStr).split('"')[1]
-        form = {"method": "hcaptcha",
-        "sitekey": siteKey,
-        "key": api_key,
-        "pageurl": ebayCaptchaURL,
-        "json": 1
-        }
-        captchaResponse = requests.post('http://2captcha.com/in.php', data=form)
-        captchaRequestId = Response.json()['request']
 
-        url = f"http://2captcha.com/res.php?key={api_key}&action=get&id={captchaRequestId}&json=1"
-        print(url)
-        input('\nReview Output')
-
-        status = False
-        while status != True:
-            print('\nInside Loop...')
-            res = requests.get(url)
-            if res.json()['status']==0:
-                time.sleep(3)
-                status = False
-            else:cd
-                requ = res.json()['request']
-                js = f'document.getElementByName("h-captcha-response").innerHTML="{requ}";'
-                js1 =f'document.getElementByName("g-captcha-response").innerHTML="{requ}";'
-                browser.execute_script(js)
-                browser.find_element(By.NAME, "h-captcha-response").submit()
-                browser.execute_script(js1)
-                browser.find_element(By.NAME, "g-captcha-repsonse").submit()
-                print('\nSubmitting Captcha Anwser...')
-                status = True
+        result = solver.hcaptcha(sitekey=siteKey, url='https://www.ebay.com/splashui/captcha?ap=1',)
+        print(result)
+    else:
+        pass
     #try:
     #    items_dropdown = browser.find_element(By.XPATH,
     #        "/html/body/div[5]/div[5]/div[2]/div[1]/div[2]/ul/div[3]/div[2]/div/span[2]/button/span"
@@ -197,6 +173,10 @@ def ebayBrowser(searchTerm):
     #with open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","w") as writer:
     #    writer.write(str(soldSoup))
     
+    input('\nDid it work?')
+
+    browser.refresh()
+
     #browser.quit()
 
 ebayBrowser('nothing')
