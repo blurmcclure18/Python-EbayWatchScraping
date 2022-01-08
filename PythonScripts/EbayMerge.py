@@ -31,7 +31,7 @@ def createSourceDir():
 def testingBrowser():
     pass
 
-def listedRequests(searchTerm, avgPrice):
+def listedRequests(searchTerm, avgPrice):    
     # Set Ebay URL
     inUrlSearch = searchTerm.replace(' ', '+')
     ebayListedUrl = f"https://www.ebay.com/sch/i.html?_from=R40&_nkw={inUrlSearch}&_sacat=0&_udhi={avgPrice}&rt=nc&LH_BIN=1"
@@ -133,14 +133,17 @@ def ebayBrowser(searchTerm):
     soldSoup = BeautifulSoup(ebaySold, "html.parser")
 
     # Write the Beautified Soup to html file for parsing
-    with open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","w") as writer:
-        writer.write(str(soldSoup))
+    #with open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","w") as writer:
+    #    writer.write(str(soldSoup))
     
     browser.quit()
 
-    return
+    return soldSoup
 
 def parseData(searchTerm,searchName):
+
+    soldSoup = ebayBrowser(searchTerm)
+
     # Parse Data based on Sold or Listed Status
     print('\nParsing Data...')
     
@@ -150,8 +153,8 @@ def parseData(searchTerm,searchName):
     with lock:
         # Import and rebeautify it
         print("\nImporting Sold Data...")
-        soldSoup = open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","r")
-        newSoldSoup = BeautifulSoup(soldSoup, "html.parser")
+        #soldSoup = open(f"{currentDir}/TempFiles/{searchTerm}Sold.html","r")
+        newSoldSoup = soldSoup#BeautifulSoup(soldSoup, "html.parser")
 
         # Get all Sold Listings Data
         soldResults = newSoldSoup.find_all("div", {"class": "s-item__info clearfix"})
@@ -303,7 +306,7 @@ def parseData(searchTerm,searchName):
 def getHandles(searchTerm, searchName):
     # Using threading perform these functions
     print('\nGetting Handles...')
-    ebayBrowser(searchTerm)
+    #ebayBrowser(searchTerm)
     parseData(searchTerm,searchName)
 
 def setupWorkers(searchTermList,nameList):
@@ -320,7 +323,7 @@ def newMain(searchTermList, nameList):
     createSourceDir()
 
     # Testing Functions
-    
+    #getHandles('elgin grade 95', 'Elgin 95')
     # Perform a Captcha Check before launching Threaded Browsers
     #captchaCheck(testBrowser(searchTermList[0]))
 
@@ -342,5 +345,5 @@ if len(MasterDict) > 0:
 else:
     print("\nCouldn't find any items that matched your search critera try refining your search.")
 
-with open(f'{currentDir}/MasterDict.py','w') as writer:
+with open(f'{currentDir}/MasterDict.py','w', encoding='utf-8') as writer:
     writer.write(f'MasterDict = {MasterDict}')

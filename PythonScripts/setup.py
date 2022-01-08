@@ -15,7 +15,7 @@ currentDir = os.path.dirname(__file__)
 def setupPython():
     # Get Script File for Linux and Windows
     bashScript = f"{currentDir}/SetupScripts/BashScript/setupEnv.sh"
-    windowsScript = f"{currentDir}/SetupScripts/WindowsScript/setupEnv.ps1"
+    windowsScript = f"{currentDir}/SetupScripts/WindowsScript/setupEnv.bat"
     
     if os.name == "nt":
         call(windowsScript, shell=True)
