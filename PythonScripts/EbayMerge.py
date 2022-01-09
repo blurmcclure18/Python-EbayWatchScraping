@@ -10,8 +10,8 @@ from random import randint
 from bs4 import BeautifulSoup
 from selenium import webdriver as wd
 from selenium.webdriver.common.by import By
-from PythonScripts.setup import keywordsList
-from PythonScripts.setup import searchNameList
+from PythonScripts.userSearch import keywordsList
+from PythonScripts.userSearch import searchNameList
 from PythonScripts.Settings.headless import headless
 from selenium.webdriver.firefox.options import Options
 
